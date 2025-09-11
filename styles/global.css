@@ -1,0 +1,203 @@
+@import url("https://unpkg.com/ress@5.0.2/dist/ress.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1000;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 半透明背景 */
+    backdrop-filter: blur(4px);
+    /* 背景ぼかし */
+    -webkit-backdrop-filter: blur(4px);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+/* ナビゲーション */
+.navbar {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 8px 16px;
+    border-radius: 0 0 0 10px 10px;
+    font-weight: bold;
+    transition: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ハンバーガーボタン（スマホ用） */
+.hamburger {
+    top: 12px;
+    font-family: 'Kosugi Maru', sans-serif;
+    display: none;
+    font-size: 25px;
+    background: none;
+    border: none;
+    padding: 12px;
+    position: fixed;
+    right: 12px;
+    z-index: 1001;
+}
+
+
+/* 共通ロゴスタイル（PCでは非表示） */
+.logo {
+    display: none;
+    position: fixed;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1001;
+}
+
+.logo img {
+    height: auto;
+    width: 180px;
+    /* ここがポイント！スマホでも見やすい幅に調整 */
+    max-width: 85vw;
+    /* 小さいスマホで縮小対応 */
+}
+
+footer {
+    background: linear-gradient(to right, #fff7c2, #ffe8a3);
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 2px solid #ffe08a;
+    transition: background 0.5s ease, transform 0.3s ease;
+}
+
+.footer-content p {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 14px;
+    color: #555;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0 10px;
+    /* スマホでの余白 */
+    word-break: break-word;
+}
+
+footer:hover {
+    background: linear-gradient(to right, #fff0a8, #ffd86b);
+    transform: translateY(-2px);
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    .logo {
+        display: block;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    .hamburger {
+        display: block;
+        top: 5px;
+        font-size: 2.0rem;
+    }
+
+    .navbar {
+        text-align: center;
+        font-family: 'Kosugi Maru', sans-serif;
+        display: flex;
+        top: 80px;
+        right: 0;
+        left: auto;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 16px;
+        border-radius: 0 0 0 10px;
+        width: 200px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        transform: translateX(100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        z-index: 1000;
+    }
+
+    .navbar.open {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .logo {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 1001;
+    }
+
+    .logo img {
+        width: 180px;
+        max-width: 85vw;
+    }
+
+    footer {
+        padding: 15px 0;
+        margin-top: 30px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+        padding: 0 16px;
+        /* スマホ時は左右余白を広めに */
+    }
+
+    @keyframes float-up {
+        0% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(-40px) scale(1.5);
+        }
+    }
+
+    .flying-heart {
+        position: absolute;
+        left: 8px;
+        top: -10px;
+        color: #ff69b4;
+        font-size: 16px;
+        animation: float-up 1s ease forwards;
+        pointer-events: none;
+    }
+}
