@@ -1,6 +1,19 @@
 export const chapter5 = [
     {
         chapter: 5,
+        title: '#5【34】好きって言わせてやる！',
+        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1758181370/000_arbgoq.jpg',
+        pages: [
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1758181373/001_abgnaa.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1758181375/002_l05kry.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1758181375/003_knpjvm.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1758181376/004_jkpkwu.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1758181377/005_ildekg.jpg',
+        ],
+         URL: 'https://note.com/dot_emiko/n/nb198abaf96fe',
+    },
+    {
+        chapter: 5,
         title: '#5【33】好きって言わせてやる！',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754816357/000_nqdksb.jpg',
         pages: [
@@ -9,7 +22,7 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754815762/003_qtmot6.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754815764/004_nhvtwc.jpg',
         ],
-         URL: 'https://note.com/emy_log/n/n3c18f9e0a4e8?sub_rt=share_pb',
+         URL: 'https://note.com/dot_emiko/n/n3c18f9e0a4e8',
     },
     {
         chapter: 5,
@@ -23,7 +36,7 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754370140/005_ojhkot.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754370156/006_q7ca70.jpg',
         ],
-         URL: 'https://note.com/emy_log/n/n18ba26b3a9f0',
+         URL: 'https://note.com/dot_emiko/n/n18ba26b3a9f0',
     },
     {
         chapter: 5,
