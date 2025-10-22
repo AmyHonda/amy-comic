@@ -1,6 +1,20 @@
 export const chapter5 = [
     {
         chapter: 5,
+        title: '#5【35】好きって言わせてやる！',
+        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1761093504/000_h4pkt4.jpg',
+        pages: [
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1761093508/001_joymmm.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1761093509/002_wrmagb.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1761093511/003_ov0ccl.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1761093506/004_lyyxgf.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1761093510/005_gre319.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1761093509/006_jks4ic.jpg',
+        ],
+         URL: 'https://note.com/dot_emiko/n/ne8ebae414ea5',
+    },
+    {
+        chapter: 5,
         title: '#5【34】好きって言わせてやる！',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1758181370/000_arbgoq.jpg',
         pages: [
