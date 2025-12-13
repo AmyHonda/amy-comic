@@ -72,6 +72,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <nav className={`navbar ${isOpen ? "open" : ""}`}>
             <Link href="/" onClick={() => setIsOpen(false)}>ホーム</Link>
             <Link href="https://note.com/dot_emiko" onClick={() => setIsOpen(false)}>ブログ</Link>
+            <Link href="https://bsky.app/profile/amycomic.bsky.social" onClick={() => setIsOpen(false)}>つぶやき</Link>
             <Link href="/characters" onClick={() => setIsOpen(false)}>登場人物</Link>
             <Link href="/main" onClick={() => setIsOpen(false)}>本編</Link>
             <Link href="/sub" onClick={() => setIsOpen(false)}>番外編</Link>
