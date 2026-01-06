@@ -4,6 +4,7 @@ import '../styles/global.css'
 import Script from 'next/script';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -90,6 +91,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <p>&copy;2025 エイミーコミック Amy Comic.</p>
           </div>
         </footer>
+
+        <Analytics />
 
       </body>
     </html>
