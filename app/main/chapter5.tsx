@@ -6,11 +6,11 @@ export const chapter5 = [
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1767938635/01_semmcr.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1767938635/02_hkoa75.jpg',
-            'https://res.cloudinary.com/dqx46otx4/image/upload/v1767938632/03_tj7gcp.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1767940596/%E5%A5%BD%E3%81%8D5_37_3_grtpz4.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1767938634/04_ncixrt.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1767938637/05_nimnxi.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1767938636/06_kdfxyl.jpg',
-            'https://res.cloudinary.com/dqx46otx4/image/upload/v1767938633/07_meo3rz.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1767940594/%E5%A5%BD%E3%81%8D5_37_7_xvrror.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1767938634/08_qfdown.jpg',
         ],
     },
