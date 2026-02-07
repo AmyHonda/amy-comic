@@ -1,6 +1,6 @@
 'use client';
 import { useState, ReactNode } from "react";
-import '../styles/global.css'
+import '../styles/global.css?v=3'
 import Script from 'next/script';
 import Link from 'next/link';
 import Image from 'next/image';

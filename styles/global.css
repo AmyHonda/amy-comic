@@ -28,6 +28,7 @@ button {
 
 /* ナビゲーション */
 .navbar {
+    
     position: fixed;
     top: 10px;
     left: 0;
