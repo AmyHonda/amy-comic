@@ -78,6 +78,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Link href="/sukebe" onClick={() => setIsOpen(false)}>スケベ</Link>
             <Link href="/illust" onClick={() => setIsOpen(false)}>イラスト</Link>
             <Link href="https://note.com/dot_emiko" onClick={() => setIsOpen(false)}>ブログ</Link>
+            <Link href="https://bsky.app/profile/amycomic.bsky.social" onClick={() => setIsOpen(false)}>bsky🦋</Link>
 
           </nav>
         </header>
