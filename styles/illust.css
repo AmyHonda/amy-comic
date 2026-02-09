@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 
 body.modal-open {
-  overflow: hidden;
-  height: 100vh;
-  position: fixed;
-  width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
 }
 
 .illust-gallery {
@@ -31,20 +31,67 @@ body.modal-open {
 }
 
 /* サムネイルの枠を固定サイズにする */
+
+/* 正方形の枠 */
+.illust-thumb-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* ← 正方形 */
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+.illust-thumb-wrapper:hover {
+    transform: scale(1.05);
+}
+
+/* 中の画像 */
+.illust-thumb-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* はみ出た部分をトリミング */
+    display: block;
+}
+
 .illust-thumbnail {
     width: 100%;
-    height: 160px; /* 固定の高さを指定 */
+    height: 160px;
+    /* 固定の高さを指定 */
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.2s ease;
 
     /* 画像の縦横比を崩さずに枠いっぱいに表示 */
-    object-fit: cover; /* または contain で全体表示 */
-    display: block; /* inline要素の下の余白を消す */
+    object-fit: cover;
+    /* または contain で全体表示 */
+    display: block;
+    /* inline要素の下の余白を消す */
 }
 
 .illust-thumbnail:hover {
     transform: scale(1.05);
+}
+
+.new-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: linear-gradient(145deg, #ff6b6b, #ff8787);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 999px;
+    letter-spacing: 0.05em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    pointer-events: none;
+    /* クリック邪魔しない */
 }
 
 /* モーダル（拡大表示） */
@@ -67,39 +114,86 @@ body.modal-open {
     border-radius: 12px;
 }
 
+.illust-modal-content {
+    max-width: min(920px, 92vw);
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    position: relative;
+}
+
+.illust-modal-content img {
+    max-width: 100%;
+    max-height: 62vh; /* ← ここが肝。コメント分の余白を確保 */
+    border-radius: 12px;
+    flex: 0 0 auto;
+}
+
+.illust-comment {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 14px;
+    padding: 14px 16px;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+
+    max-height: 20vh;     /* ← コメントが長い時だけ高さ制限 */
+    overflow-y: auto;     /* ← 中だけスクロール */
+    overscroll-behavior: contain; /* ← スクロールが背景に伝播しない */
+}
+
+.illust-comment-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;     /* ← これ */
+  letter-spacing: 0.15em; /* 少しだけ雰囲気出す */
+  opacity: 0.85;
+}
+
+.illust-comment-line {
+  margin: 0;
+}
+.illust-comment-line + .illust-comment-line {
+  margin-top: 8px;
+}
+
 body.modal-open {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: linear-gradient(145deg, #fff7c2, #ffd966);
-  border: 2px solid #ffcc00;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  opacity: 0.9;
-  transition: all 0.3s ease;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(145deg, #fff7c2, #ffd966);
+    border: 2px solid #ffcc00;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .scroll-to-top:hover {
-  opacity: 1;
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .scroll-icon {
-  width: 28px;
-  height: 28px;
-  color: #333;
+    width: 28px;
+    height: 28px;
+    color: #333;
 }
 
 @media (max-width: 600px) {
@@ -114,12 +208,13 @@ body.modal-open {
     }
 
     .gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2列表示にすることで読みやすく */
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
 
     .illust-thumbnail {
-        height: 120px; /* 小さい画面では少し低めにして収まりよく */
+        height: 120px;
+        /* 小さい画面では少し低めにして収まりよく */
     }
 
     .illust-modal img {
@@ -127,15 +222,39 @@ body.modal-open {
         max-height: 80%;
     }
 
-    .scroll-to-top {
-    width: 50px;
-    height: 50px;
-    bottom: 15px;
-    right: 15px;
-  }
+    .illust-modal-content img {
+        max-height: 55vh;
+    }
 
-  .scroll-icon {
-    width: 24px;
-    height: 24px;
-  }
+    .illust-comment {
+        max-height: 26vh;
+        font-size: 0.9rem;
+        padding: 12px 14px;
+        white-space: pre-line;
+    }
+
+    .illust-comment-title {
+        font-weight: bold;
+        margin-bottom: 6px;
+        opacity: 0.8;
+    }
+
+    .new-badge {
+        font-size: 0.6rem;
+        padding: 3px 6px;
+        top: 6px;
+        left: 6px;
+    }
+
+    .scroll-to-top {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .scroll-icon {
+        width: 24px;
+        height: 24px;
+    }
 }
