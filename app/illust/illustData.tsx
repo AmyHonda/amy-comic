@@ -13,7 +13,11 @@ export const illustrations: Illustration[] = [
         full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1770619167/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%91%B5_%EF%B8%8F%E6%A4%BF_h9771s.jpg',
         alt: '',
         isNew: true,
-        comment: `バレンタイン企画で制服姿じゃない葵と椿のイラストを描きました✏️ 制服じゃない二人を描くのは新鮮で描いてて超楽しかったです🫶`,
+        comment: `バレンタイン企画で制服姿じゃない
+                  葵と椿のイラストを描きました✏️ 
+                  制服じゃない二人を描くのは新鮮で
+                  描いてて超楽しかったです😎
+                  第二弾もありますので、よろぴく🫶`,
     },
     {
         // src: '/images/illust/023.jpg',
