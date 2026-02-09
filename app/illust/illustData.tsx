@@ -15,8 +15,6 @@ export const illustrations: Illustration[] = [
         isNew: true,
         comment: `バレンタイン企画で制服姿じゃない
                   葵と椿のイラストを描きました✏️ 
-                  制服じゃない二人を描くのは新鮮で
-                  描いてて超楽しかったです😎
                   第二弾もありますので、よろぴく🫶`,
     },
     {
