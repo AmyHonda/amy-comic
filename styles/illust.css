@@ -138,7 +138,7 @@ body.modal-open {
     padding: 14px 16px;
     line-height: 1.7;
     font-size: 0.95rem;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 
     max-height: 20vh;     /* ← コメントが長い時だけ高さ制限 */
@@ -152,13 +152,6 @@ body.modal-open {
   text-align: center;     /* ← これ */
   letter-spacing: 0.15em; /* 少しだけ雰囲気出す */
   opacity: 0.85;
-}
-
-.illust-comment-line {
-  margin: 0;
-}
-.illust-comment-line + .illust-comment-line {
-  margin-top: 8px;
 }
 
 body.modal-open {

@@ -8,11 +8,21 @@ export type Illustration = {
 
 export const illustrations: Illustration[] = [
     {
+        // src: '/images/illust/025.jpg',
+        thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1772437673/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%93%AE_%EF%B8%8F%E8%98%AD_3_kjftdx.jpg",
+        full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1772437677/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%93%AE_%EF%B8%8F%E8%98%AD_ovnyei.jpg',
+        alt: '',
+        isNew: true,
+        comment: `バレンタイン企画２回目！
+                  今回は蓮と蘭のイラストです🫶
+                  第三回目もよろぴくです😎`,
+    },
+    {
         // src: '/images/illust/024.jpg',
         thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1770620253/thumb024_shvshy.jpg",
         full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1770619167/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%91%B5_%EF%B8%8F%E6%A4%BF_h9771s.jpg',
         alt: '',
-        isNew: true,
+        // isNew: true,
         comment: `バレンタイン企画で制服姿じゃない
                   葵と椿のイラストを描きました✏️ 
                   第二弾もありますので、よろぴく🫶`,
