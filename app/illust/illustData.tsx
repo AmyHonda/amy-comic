@@ -9,8 +9,8 @@ export type Illustration = {
 export const illustrations: Illustration[] = [
     {
         // src: '/images/illust/025.jpg',
-        thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1772437673/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%93%AE_%EF%B8%8F%E8%98%AD_3_kjftdx.jpg",
-        full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1772437677/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%93%AE_%EF%B8%8F%E8%98%AD_ovnyei.jpg',
+        thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1772439937/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%93%AE_%EF%B8%8F%E8%98%AD_3_sn7h4z.jpg",
+        full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1772439948/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%93%AE_%EF%B8%8F%E8%98%AD_n1gzxw.jpg',
         alt: '',
         isNew: true,
         comment: `バレンタイン企画２回目！
