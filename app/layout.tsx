@@ -22,35 +22,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="エイミーコミック" />
 
-        {/* Twitterカード用 */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="エイミーコミック" />
-        <meta name="twitter:description" content="高校生男女のラブコメ一次創作漫画「好きって言わせてやる！」を連載しています。。" />
-        <meta name="twitter:image" content="/ogp.png" />
-
         <title>エイミーコミック</title>
         <meta name="description" content="エイミーコミックです。高校生男女のラブコメ一次創作漫画「好きって言わせてやる！」を描いています。" />
       </head>
       <body>
-        {/* 忍者アクセス解析タグ */}
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `
-        <!--shinobi1-->
-        <script type="text/javascript" src="//xa.shinobi.jp/ufo/192073700"></script>
-        <noscript>
-          <a href="//xa.shinobi.jp/bin/gg?192073700" target="_blank">
-            <img src="//xa.shinobi.jp/bin/ll?192073700" style="border:0;" alt="" />
-          </a><br>
-          <span style="font-size:9px;">
-            <img src="//img.shinobi.jp/tadaima/fj.gif" width="19" height="11" style="margin:0;vertical-align:text-bottom;" alt="" />
-          </span>
-        </noscript>
-        <!--shinobi2-->
-      `
-          }}
-        />
-
         <header>
           <div className="logo">
             <Link href="/">
@@ -78,7 +53,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Link href="/sukebe" onClick={() => setIsOpen(false)}>スケベ</Link>
             <Link href="/illust" onClick={() => setIsOpen(false)}>イラスト</Link>
             <Link href="https://note.com/dot_emiko" onClick={() => setIsOpen(false)}>ブログ</Link>
-            <Link href="https://bsky.app/profile/amycomic.bsky.social" onClick={() => setIsOpen(false)}>bsky🦋</Link>
 
           </nav>
         </header>
