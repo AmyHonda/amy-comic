@@ -9,10 +9,20 @@ export type Illustration = {
 export const illustrations: Illustration[] = [
     {
         // src: '/images/illust/025.jpg',
+        thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1774658024/D162BBB1-B6AF-4B53-8239-6BDC5E60B3A2_1_201_a_dmwqql.jpg",
+        full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1774658036/EB44C755-F10A-49D0-AFFC-EBD6DDAFCB91_wfnpqs.jpg',
+        alt: '',
+        isNew: true,
+        comment: `バレンタイン企画３回目！
+                  最後は楓と桜です🫶
+                  やっとペア全員描けました✨`,
+    },
+    {
+        // src: '/images/illust/025.jpg',
         thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1772439937/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%93%AE_%EF%B8%8F%E8%98%AD_3_sn7h4z.jpg",
         full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1772439948/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%93%AE_%EF%B8%8F%E8%98%AD_n1gzxw.jpg',
         alt: '',
-        isNew: true,
+        // isNew: true,
         comment: `バレンタイン企画２回目！
                   今回は蓮と蘭のイラストです🫶
                   第三回目もよろぴくです😎`,
