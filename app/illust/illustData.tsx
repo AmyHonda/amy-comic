@@ -13,7 +13,7 @@ export const illustrations: Illustration[] = [
         thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1774658024/D162BBB1-B6AF-4B53-8239-6BDC5E60B3A2_1_201_a_dmwqql.jpg",
         full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1774658036/EB44C755-F10A-49D0-AFFC-EBD6DDAFCB91_wfnpqs.jpg',
         alt: '',
-        isNew: true,
+        // isNew: true,
         comment: `バレンタイン企画３回目！
                   最後は楓と桜です🫶
                   やっとペア全員描けました✨`,
