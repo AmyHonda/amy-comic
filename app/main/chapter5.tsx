@@ -13,6 +13,7 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671682/%E5%A5%BD%E3%81%8D5_38_5_ef3b74.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671681/%E5%A5%BD%E3%81%8D5_38_6_vnak0z.jpg',
         ],
+        URL: 'https://www.amy-comic.com/blog/v_9hixcp0f1',
     },
     {
         chapter: 5,
@@ -41,7 +42,6 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1762669242/005_dbo7pt.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1762669244/006_b4gnph.jpg',
         ],
-         URL: 'https://note.com/dot_emiko/n/nd425ee9d30ad',
     },
     {
         chapter: 5,
@@ -55,7 +55,6 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1761093510/005_gre319.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1761093509/006_jks4ic.jpg',
         ],
-         URL: 'https://note.com/dot_emiko/n/ne8ebae414ea5',
     },
     {
         chapter: 5,
@@ -68,7 +67,6 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1758181376/004_jkpkwu.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1758181377/005_ildekg.jpg',
         ],
-         URL: 'https://note.com/dot_emiko/n/nb198abaf96fe',
     },
     {
         chapter: 5,
@@ -80,7 +78,6 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754815762/003_qtmot6.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754815764/004_nhvtwc.jpg',
         ],
-         URL: 'https://note.com/dot_emiko/n/n3c18f9e0a4e8',
     },
     {
         chapter: 5,
@@ -94,7 +91,6 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754370140/005_ojhkot.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754370156/006_q7ca70.jpg',
         ],
-         URL: 'https://note.com/dot_emiko/n/n18ba26b3a9f0',
     },
     {
         chapter: 5,
@@ -108,7 +104,6 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754204663/005_ldqlcy.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754204603/006_ow1hn0.jpg',
         ],
-         URL: 'https://www.amy-comic.com/entry/2025/06/19/180000',
     },
     {
         chapter: 5,
