@@ -15,7 +15,7 @@ button {
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .main-comic-gallery {
@@ -54,6 +54,23 @@ button {
   margin-top: 8px;
   font-size: 1rem;
   font-family: 'Kosugi Maru', sans-serif;
+}
+
+.new-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: linear-gradient(145deg, #ff6b6b, #ff8787);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  pointer-events: none;
+  /* クリック邪魔しない */
 }
 
 .main-comic-modal {
@@ -148,23 +165,23 @@ button {
 }
 
 .afterword-link {
-    display: inline-block;
-    font-family: 'Kosugi Maru', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    padding: 10px 20px;
-    background-color: #ffecb3;
-    color: #333;
-    font-size: 1rem;
-    border-radius: 24px;
-    text-decoration: none;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-    text-align: center;
+  display: inline-block;
+  font-family: 'Kosugi Maru', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  background-color: #ffecb3;
+  color: #333;
+  font-size: 1rem;
+  border-radius: 24px;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .afterword-link:hover {
-    background-color: #ffd966;
+  background-color: #ffd966;
 }
 
 
@@ -201,6 +218,13 @@ button {
 
   .main-comic-title {
     font-size: 0.9rem;
+  }
+
+  .new-badge {
+    font-size: 0.6rem;
+    padding: 3px 6px;
+    top: 6px;
+    left: 6px;
   }
 
   .main-comic-pages {
