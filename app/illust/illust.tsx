@@ -1,3 +1,4 @@
+// app/illust/illust.tsx
 'use client';
 
 import { useEffect, useRef, useState } from "react";

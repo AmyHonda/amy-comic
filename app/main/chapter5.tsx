@@ -1,4 +1,19 @@
+// app/main/chapter5.tsx
 export const chapter5 = [
+    {
+        chapter: 5,
+        title: '#5【38】好きって言わせてやる！',
+        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671669/%E5%A5%BD%E3%81%8D5_38%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC_am1wls.jpg',
+        isNew: true,
+        pages: [
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671683/%E5%A5%BD%E3%81%8D5_38_mibx5e.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671673/%E5%A5%BD%E3%81%8D5_38_2_vqkt22.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671681/%E5%A5%BD%E3%81%8D5_38_3_g9cpdi.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671682/%E5%A5%BD%E3%81%8D5_38_4_pqojfn.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671682/%E5%A5%BD%E3%81%8D5_38_5_ef3b74.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671681/%E5%A5%BD%E3%81%8D5_38_6_vnak0z.jpg',
+        ],
+    },
     {
         chapter: 5,
         title: '#5【37】好きって言わせてやる！',

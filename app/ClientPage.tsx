@@ -1,5 +1,5 @@
+// app/ClientPage.tsx
 'use client';
-
 import Slideshow from "./Slideshow";
 import { useEffect, useState } from "react";
 import { client } from '@/lib/microcms';

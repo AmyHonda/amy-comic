@@ -1,16 +1,10 @@
+// app/main/mainComic.tsx
 'use client';
 
 import { useEffect, useState, useRef } from "react";
-import { mainComics } from "./mainComicData";
+import { mainComics, type MainComic } from "./mainComicData";
 import { ChevronDoubleUpIcon } from '@heroicons/react/24/solid';
 import '../../styles/mainComic.css';
-
-type MainComic = {
-    title: string;
-    thumbnail: string;
-    pages: string[];
-    URL?: string;
-};
 
 export default function MainComicPage() {
     const [selected, setSelected] = useState<MainComic | null>(null);
@@ -96,6 +90,7 @@ export default function MainComicPage() {
             <div className="main-comic-list">
                 {filteredComics.map((comic, index) => (
                     <div key={index} className="main-comic-item" onClick={() => setSelected(comic)}>
+                        {comic.isNew && <span className="new-badge">NEW</span>}
                         <img src={comic.thumbnail} alt={comic.title} loading="lazy" className="main-comic-thumb" />
                         <p className="main-comic-title">{comic.title}</p>
                     </div>

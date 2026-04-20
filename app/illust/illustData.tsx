@@ -1,3 +1,4 @@
+// app/illust/illustData.tsx
 export type Illustration = {
   thumb: string;
   full: string;
