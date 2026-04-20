@@ -1,3 +1,4 @@
+// lib/microcms.ts
 import { createClient } from 'microcms-js-sdk';
 
 console.log("✅ 環境変数チェック：");

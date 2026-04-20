@@ -1,6 +1,8 @@
+// app/layout.tsx
 'use client';
 import { useState, ReactNode } from "react";
 import '../styles/global.css'
+import './globals.css'
 import Link from 'next/link';
 import Image from 'next/image';
 import { Analytics } from "@vercel/analytics/react";
@@ -51,6 +53,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Link href="/sub" onClick={() => setIsOpen(false)}>番外編</Link>
             <Link href="/sukebe" onClick={() => setIsOpen(false)}>スケベ</Link>
             <Link href="/illust" onClick={() => setIsOpen(false)}>イラスト</Link>
+            <Link href="/blog" onClick={() => setIsOpen(false)}>ブログ</Link>
           </nav>
         </header>
 

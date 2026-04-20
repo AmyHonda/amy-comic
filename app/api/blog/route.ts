@@ -1,4 +1,4 @@
-// app/api/news/route.ts
+// app/api/blog/route.ts
 import { NextResponse } from 'next/server';
 import { createClient } from 'microcms-js-sdk';
 
@@ -8,6 +8,6 @@ const client = createClient({
 });
 
 export async function GET() {
-  const data = await client.get({ endpoint: 'news' });
+  const data = await client.get({ endpoint: 'blogs' });
   return NextResponse.json(data);
 }
