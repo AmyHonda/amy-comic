@@ -2,9 +2,22 @@
 export const chapter5 = [
     {
         chapter: 5,
+        title: '#5【39】好きって言わせてやる！',
+        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1777106946/%E5%A5%BD%E3%81%8D5_39_4%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC_si4okk.jpg',
+        isNew: true,
+        pages: [
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1777106950/%E5%A5%BD%E3%81%8D5_39_frgdal.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1777106951/%E5%A5%BD%E3%81%8D5_39_2_knxbyf.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1777106953/%E5%A5%BD%E3%81%8D5_39_3_yu7ym1.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1777106952/%E5%A5%BD%E3%81%8D5_39_4_g23tzy.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1777106956/%E5%A5%BD%E3%81%8D5_39_5_r7nceb.jpg',
+        ],
+        URL: 'https://www.amy-comic.com/blog/k3onmve-5',
+    },
+    {
+        chapter: 5,
         title: '#5【38】好きって言わせてやる！',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671669/%E5%A5%BD%E3%81%8D5_38%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC_am1wls.jpg',
-        isNew: true,
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671683/%E5%A5%BD%E3%81%8D5_38_mibx5e.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671673/%E5%A5%BD%E3%81%8D5_38_2_vqkt22.jpg',
