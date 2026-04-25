@@ -3,7 +3,7 @@ export const chapter5 = [
     {
         chapter: 5,
         title: '#5【39】好きって言わせてやる！',
-        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1777106946/%E5%A5%BD%E3%81%8D5_39_4%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC_si4okk.jpg',
+        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1777110376/%E5%A5%BD%E3%81%8D5_39_2%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC_bkctbk.jpg',
         isNew: true,
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1777106950/%E5%A5%BD%E3%81%8D5_39_frgdal.jpg',
