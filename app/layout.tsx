@@ -6,20 +6,11 @@ import './globals.css'
 import Link from 'next/link';
 import Image from 'next/image';
 import { Analytics } from "@vercel/analytics/react";
+import Script from 'next/script';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = `https://xa.shinobi.jp/ufo/192073700?t=${Date.now()}`;
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, [pathname]);
 
   return (
     <html lang="ja">
@@ -67,7 +58,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         <Analytics />
 
-        {/* 忍者アクセス解析（noscript） */}
+        {/* --- 忍者アクセス解析（ここを Script に戻す） --- */}
+        <Script
+          key={pathname} // URLが変わるたびに再実行
+          src={`https://xa.shinobi.jp/ufo/192073700?t=${Date.now()}`}
+          strategy="afterInteractive"
+        />
+
         <noscript>
           <a
             href="https://xa.shinobi.jp/bin/gg?192073700"
