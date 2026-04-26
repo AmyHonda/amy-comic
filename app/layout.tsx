@@ -25,6 +25,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         <title>エイミーコミック</title>
         <meta name="description" content="エイミーコミックです。高校生男女のラブコメ一次創作漫画「好きって言わせてやる！」を描いています。" />
+
+        {/* 忍者アクセス解析 */}
+        <script type="text/javascript" src="//xa.shinobi.jp/ufo/192073700" async />
       </head>
       <body>
         <header>
@@ -68,6 +71,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </footer>
 
         <Analytics />
+
+        {/* 忍者アクセス解析（noscript） */}
+        <noscript>
+          <a href="//xa.shinobi.jp/bin/gg?192073700" target="_blank">
+            <img src="//xa.shinobi.jp/bin/ll?192073700" style={{ border: 0 }} alt="" />
+          </a>
+        </noscript>
 
       </body>
     </html>
