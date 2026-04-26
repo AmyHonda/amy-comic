@@ -1,5 +1,5 @@
 'use client';
-import { useState, ReactNode, useEffect } from "react";
+import { useState, ReactNode } from "react";
 import { usePathname } from 'next/navigation';
 import '../styles/global.css'
 import './globals.css'
@@ -48,7 +48,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </nav>
         </header>
 
-        <main>{children}</main>
+        <main>
+          {children}
+
+          {/* --- 忍者アクセス解析 --- */}  
+          <noscript>
+            <a href="https://xa.shinobi.jp/bin/gg?192073700" target="_blank" rel="noopener noreferrer">
+              <img src="https://xa.shinobi.jp/bin/ll?192073700" style={{ border: 0 }} alt="忍者アクセス解析" />
+            </a>
+          </noscript>
+        </main>
 
         <footer>
           <div className="footer-content">
@@ -60,20 +69,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         {/* --- 忍者アクセス解析（ここを Script に戻す） --- */}
         <Script
-          key={pathname} // URLが変わるたびに再実行
-          src={`https://xa.shinobi.jp/ufo/192073700?t=${Date.now()}`}
-          strategy="afterInteractive"
+          key={pathname}
+          src="https://xa.shinobi.jp/ufo/192073700"
+          strategy="afterInteractive" // これを維持しつつ、もしダメなら strategy を削除
+        // エラー対策として「実行タイミング」をブラウザに任せるための工夫
         />
-
-        <noscript>
-          <a
-            href="https://xa.shinobi.jp/bin/gg?192073700"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="https://xa.shinobi.jp/bin/ll?192073700" style={{ border: 0 }} alt="" />
-          </a>
-        </noscript>
 
       </body>
     </html>
