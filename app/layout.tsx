@@ -1,16 +1,25 @@
 'use client';
-import { useState, ReactNode } from "react";
+import { useState, ReactNode, useEffect } from "react";
 import { usePathname } from 'next/navigation';
 import '../styles/global.css'
 import './globals.css'
 import Link from 'next/link';
 import Image from 'next/image';
 import { Analytics } from "@vercel/analytics/react";
-import Script from 'next/script';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = `https://xa.shinobi.jp/ufo/192073700?t=${Date.now()}`;
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, [pathname]);
 
   return (
     <html lang="ja">
@@ -57,13 +66,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </footer>
 
         <Analytics />
-
-        {/* 忍者アクセス解析（スクリプト本体） */}
-        <Script
-          key={pathname}
-          src="https://xa.shinobi.jp/ufo/192073700"
-          strategy="afterInteractive"
-        />
 
         {/* 忍者アクセス解析（noscript） */}
         <noscript>
