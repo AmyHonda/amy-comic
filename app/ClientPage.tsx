@@ -2,6 +2,7 @@
 'use client';
 import Slideshow from "./Slideshow";
 import { useEffect, useState } from "react";
+import FloatingSymbols from "./FloatingSymbols";
 import { client } from '@/lib/microcms';
 import { BellAlertIcon } from '@heroicons/react/24/solid';
 
@@ -40,6 +41,7 @@ export default function ClientPage() {
 
     return (
         <main className="home">
+            <FloatingSymbols count={20} />
             <Slideshow />
 
             <section className="about">

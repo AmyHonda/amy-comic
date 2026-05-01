@@ -1,3 +1,4 @@
+// app/Slideshow.tsx
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -7,7 +8,6 @@ const images = [
   '/images/home/top01.jpg',
   '/images/home/top02.jpg',
   '/images/home/top03.jpg',
-  '/images/home/top04.jpg',
 ];
 
 export default function Slideshow() {
@@ -16,7 +16,7 @@ export default function Slideshow() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-  }, 2500);
+  }, 1800);
 
   return () => clearInterval(interval);
 }, []);

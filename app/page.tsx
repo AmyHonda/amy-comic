@@ -1,3 +1,4 @@
+// app/page.tsx
 import ClientPage from './ClientPage';
 
 export const metadata = {

@@ -1,3 +1,4 @@
+/* styles/home.css */
 @import url("https://unpkg.com/ress@5.0.2/dist/ress.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
@@ -106,6 +107,41 @@
 
 .slideshow img.active {
   opacity: 1;
+}
+
+/* 星ふわふわアニメーション */
+.floating-symbols {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.floating-symbol {
+  position: absolute;
+  top: -40px;
+  opacity: 0;
+  animation: floatDown linear infinite;
+  user-select: none;
+}
+
+@keyframes floatDown {
+  0%   { transform: translateY(0) rotate(0deg);      opacity: 0; }
+  8%   { opacity: 1; }
+  88%  { opacity: 0.65; }
+  100% { transform: translateY(105vh) rotate(15deg);  opacity: 0; }
+}
+
+/* コンテンツが星の上に来るように */
+.about,
+.news,
+.slideshow {
+  position: relative;
+  z-index: 1;
 }
 
 /* スマホ用 */
