@@ -53,6 +53,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Link href="/sub" onClick={() => setIsOpen(false)}>番外編</Link>
             <Link href="/sukebe" onClick={() => setIsOpen(false)}>スケベ</Link>
             <Link href="/illust" onClick={() => setIsOpen(false)}>イラスト</Link>
+            <Link href="/ai" onClick={() => setIsOpen(false)}>AI作品</Link>
             <Link href="/blog" onClick={() => setIsOpen(false)}>ブログ</Link>
           </nav>
         </header>

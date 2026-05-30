@@ -1,3 +1,4 @@
+// app/illust/page.tsx
 import Illust from './illust';
 
 export const metadata = {
