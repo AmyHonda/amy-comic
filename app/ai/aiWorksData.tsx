@@ -20,13 +20,22 @@ export type AiWork = {
 
 export const aiWorks: AiWork[] = [
   {
+    id: "kaede-sakura-live-action-03",
+    type: "AI実写化動画",
+    characters: ["楓", "桜"],
+    thumbnailUrl: "https://res.cloudinary.com/dqx46otx4/image/upload/v1780311505/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-06-01_19.57.28_agpz5x.png",
+    youtubeId: "n8JdA3Fo7eA",
+    videoAspect: "short",
+    isNew: true,
+  },
+  {
     id: "ren-ran-live-action-02",
     type: "AI実写化動画",
     characters: ["蓮", "蘭"],
     thumbnailUrl: "https://res.cloudinary.com/dqx46otx4/image/upload/v1780197448/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-05-31_12.16.44_kard1n.png",
-    youtubeId: "UGegqvP9j10?si",
+    youtubeId: "UGegqvP9j10",
     videoAspect: "short",
-    isNew: true,
+    // isNew: true,
   },
   {
     id: "aoi-tsubaki-live-action-01",
