@@ -26,7 +26,7 @@ export const aiWorks: AiWork[] = [
     thumbnailUrl: "https://res.cloudinary.com/dqx46otx4/image/upload/v1780311505/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-06-01_19.57.28_agpz5x.png",
     youtubeId: "n8JdA3Fo7eA",
     videoAspect: "short",
-    isNew: true,
+    // isNew: true,
   },
   {
     id: "ren-ran-live-action-02",
