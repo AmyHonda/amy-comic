@@ -2,9 +2,24 @@
 export const chapter5 = [
     {
         chapter: 5,
-        title: '#5【39】好きって言わせてやる！',
-        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1777617505/%E5%A5%BD%E3%81%8D5-40_2%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC_tfdzaw.jpg',
+        title: '#5【41】好きって言わせてやる！',
+        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882874/%E5%A5%BD%E3%81%8D5_41_7_zd3m2x.jpg',
         isNew: true,
+        pages: [
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882885/%E5%A5%BD%E3%81%8D5_41_ejm8ug.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1780885787/%E5%A5%BD%E3%81%8D5_41_8_khr7rr.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882869/%E5%A5%BD%E3%81%8D5_41_3_crbwu7.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882879/%E5%A5%BD%E3%81%8D5_41_4_qiuhyu.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882884/%E5%A5%BD%E3%81%8D5_41_5_jrfhdp.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882887/%E5%A5%BD%E3%81%8D5_41_6_gxlzsn.jpg',
+        ],
+        URL: 'https://www.amy-comic.com/blog/n_0bz407hwaw',
+    },
+    {
+        chapter: 5,
+        title: '#5【40】好きって言わせてやる！',
+        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1777617505/%E5%A5%BD%E3%81%8D5-40_2%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC_tfdzaw.jpg',
+        // isNew: true,
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1777617523/%E5%A5%BD%E3%81%8D5-40_rm11ae.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1777622210/%E5%A5%BD%E3%81%8D5-40_3_sjhrqj.png',
