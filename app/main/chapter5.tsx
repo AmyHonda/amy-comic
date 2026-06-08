@@ -7,7 +7,7 @@ export const chapter5 = [
         isNew: true,
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882885/%E5%A5%BD%E3%81%8D5_41_ejm8ug.jpg',
-            'https://res.cloudinary.com/dqx46otx4/image/upload/v1780885787/%E5%A5%BD%E3%81%8D5_41_8_khr7rr.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1780887954/%E5%A5%BD%E3%81%8D5_41_9_kbccky.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882869/%E5%A5%BD%E3%81%8D5_41_3_crbwu7.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882879/%E5%A5%BD%E3%81%8D5_41_4_qiuhyu.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882884/%E5%A5%BD%E3%81%8D5_41_5_jrfhdp.jpg',
