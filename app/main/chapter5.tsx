@@ -13,7 +13,7 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882884/%E5%A5%BD%E3%81%8D5_41_5_jrfhdp.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882887/%E5%A5%BD%E3%81%8D5_41_6_gxlzsn.jpg',
         ],
-        URL: 'https://www.amy-comic.com/blog/n_0bz407hwaw',
+        URL: 'https://www.amy-comic.com/blog/9rwlrv21-7',
     },
     {
         chapter: 5,
