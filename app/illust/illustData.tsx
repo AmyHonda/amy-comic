@@ -10,6 +10,15 @@ export type Illustration = {
 export const illustrations: Illustration[] = [
     {
         // src: '/images/illust/025.jpg',
+        thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1787301674/%E3%81%BB%E3%81%AE%E3%81%BC%E3%81%AE_%E8%91%B5_%E6%A4%BF_%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC_dwgibo.jpg",
+        full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1787301276/%E3%81%BB%E3%81%AE%E3%81%BC%E3%81%AE_%E8%91%B5_%E6%A4%BF_aghmz5.jpg',
+        alt: '',
+        isNew: true,
+        comment: `葵と椿のほのぼの夏イラストです☀️
+                  有線イヤホンはいいぞ`,
+    },
+    {
+        // src: '/images/illust/025.jpg',
         thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1774658024/D162BBB1-B6AF-4B53-8239-6BDC5E60B3A2_1_201_a_dmwqql.jpg",
         full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1774658036/EB44C755-F10A-49D0-AFFC-EBD6DDAFCB91_wfnpqs.jpg',
         alt: '',
