@@ -13,7 +13,7 @@ export const illustrations: Illustration[] = [
         thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1787301674/%E3%81%BB%E3%81%AE%E3%81%BC%E3%81%AE_%E8%91%B5_%E6%A4%BF_%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC_dwgibo.jpg",
         full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1787301276/%E3%81%BB%E3%81%AE%E3%81%BC%E3%81%AE_%E8%91%B5_%E6%A4%BF_aghmz5.jpg',
         alt: '',
-        isNew: true,
+        // isNew: true,
         comment: `葵と椿のほのぼの夏イラストです☀️
                   有線イヤホンはいいぞ`,
     },

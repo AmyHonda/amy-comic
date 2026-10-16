@@ -10,6 +10,7 @@ type SubComic = {
   thumbnail: string;
   pages: string[];
   URL?: string;
+  isNew?: boolean;
 };
 
 export default function SubComic() {
@@ -84,6 +85,7 @@ export default function SubComic() {
       <div className='sub-comic-list'>
         {sortedComics.map((comic, index) => (
           <div key={index} className="sub-comic-item" onClick={() => setSelected(comic)}>
+            {comic.isNew && <span className="sub-new-badge">NEW</span>}
             <img src={comic.thumbnail} alt={comic.title} loading="lazy" className="sub-comic-thumb" />
             <p className="sub-comic-title">{comic.title}</p>
           </div>

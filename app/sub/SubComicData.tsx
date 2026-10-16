@@ -1,5 +1,54 @@
 export const subComics = [
     {
+        title: '#5【3】本編おまけ',
+        isNew: true,
+        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135803/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_n1goo9.jpg',
+        pages: [
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135804/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC_flydvk.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135804/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC2_uumfur.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135804/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC3_rqx3xj.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135804/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC4_srwx3v.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135804/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC5_yjagbv.jpg',
+        ],
+        // thumbnail: '/images/sub/021/000.jpg',
+        // pages: [
+        //     '/images/sub/021/001.jpg',
+        //     '/images/sub/021/002.jpg',
+        // ],
+        URL:'https://www.amy-comic.com/blog/v8tu2qklfwc',
+    },
+    {
+        title: '#5【2】10秒ルール',
+        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351994/000_vsbfhz.jpg',
+        pages: [
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352000/001_mbpukh.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352000/002_q8hhua.jpg',
+        ],
+        // thumbnail: '/images/sub/021/000.jpg',
+        // pages: [
+        //     '/images/sub/021/001.jpg',
+        //     '/images/sub/021/002.jpg',
+        // ],
+        URL:'https://www.amy-comic.com/entry/2025/07/13/185041',
+    },
+    {
+        title: '#5【1】お姫様抱っこ',
+        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351974/000_wqwcts.jpg',
+        pages: [
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351990/001_co61t2.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351973/002_brypbi.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351992/003_ggq1pj.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352008/004_qxp3ts.jpg',
+        ],
+        // thumbnail: '/images/sub/020/000.jpg',
+        // pages: [
+        //     '/images/sub/020/001.jpg',
+        //     '/images/sub/020/002.jpg',
+        //     '/images/sub/020/003.jpg',
+        //     '/images/sub/020/004.jpg',
+        // ],
+    },
+    {
         title: '#4 番外編【2-2】',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352159/003_s1rl5j.jpg',
         pages: [
@@ -98,37 +147,6 @@ export const subComics = [
         //     '/images/sub/022/006.jpg',
         //     '/images/sub/022/007.jpg',
         //     '/images/sub/022/008.jpg',
-        // ],
-    },
-    {
-        title: '#5【2】10秒ルール',
-        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351994/000_vsbfhz.jpg',
-        pages: [
-            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352000/001_mbpukh.jpg',
-            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352000/002_q8hhua.jpg',
-        ],
-        // thumbnail: '/images/sub/021/000.jpg',
-        // pages: [
-        //     '/images/sub/021/001.jpg',
-        //     '/images/sub/021/002.jpg',
-        // ],
-        URL:'https://www.amy-comic.com/entry/2025/07/13/185041',
-    },
-    {
-        title: '#5【1】お姫様抱っこ',
-        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351974/000_wqwcts.jpg',
-        pages: [
-            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351990/001_co61t2.jpg',
-            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351973/002_brypbi.jpg',
-            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351992/003_ggq1pj.jpg',
-            'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352008/004_qxp3ts.jpg',
-        ],
-        // thumbnail: '/images/sub/020/000.jpg',
-        // pages: [
-        //     '/images/sub/020/001.jpg',
-        //     '/images/sub/020/002.jpg',
-        //     '/images/sub/020/003.jpg',
-        //     '/images/sub/020/004.jpg',
         // ],
     },
     {
