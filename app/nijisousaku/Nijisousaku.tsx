@@ -53,7 +53,7 @@ export default function Nijisousaku() {
   });
 
   return (
-    <main className="fan-gallery">
+    <div className="fan-gallery">
       <h1>二次創作</h1>
 
       {/* 並び替えボタン */}
@@ -88,7 +88,7 @@ export default function Nijisousaku() {
       {selected && (
         <div className="fan-modal" onClick={() => setSelected(null)}>
           <div className="fan-pages" onClick={(e) => e.stopPropagation()}>
-            <ComicPages key={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
+            <ComicPages key={selected.title} altPrefix={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
 
             {/* つづくボタン（クリックしても反応しない） */}
             {selected.isContinued && (
@@ -117,6 +117,6 @@ export default function Nijisousaku() {
           <ChevronDoubleUpIcon className="fan-scroll-icon" />
         </button>
       )}
-    </main>
+    </div>
   );
 }

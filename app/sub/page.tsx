@@ -3,6 +3,7 @@ import SubComic from './SubComic';
 export const metadata = {
   title: '番外編',
   description: '「好きって言わせてやる！」の番外編漫画です。',
+  alternates: { canonical: '/sub' },
 };
 
 export default function SubComicPage() {

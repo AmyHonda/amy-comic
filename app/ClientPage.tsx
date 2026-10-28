@@ -40,7 +40,7 @@ export default function ClientPage() {
     }, []);
 
     return (
-        <main className="home">
+        <div className="home">
             <FloatingSymbols count={20} />
             <Slideshow />
 
@@ -72,6 +72,6 @@ export default function ClientPage() {
                     ))}
                 </ul>
             </section>
-        </main>
+        </div>
     );
 }

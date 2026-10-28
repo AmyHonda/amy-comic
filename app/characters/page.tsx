@@ -1,5 +1,7 @@
 export const metadata = {
-    title: '登場人物'
+    title: '登場人物',
+    description: '「好きって言わせてやる！」の登場人物を紹介するページです。',
+    alternates: { canonical: '/characters' },
 }
 
 import Character from './characterList';

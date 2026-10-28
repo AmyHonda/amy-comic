@@ -62,7 +62,7 @@ export default function MainComicPage() {
     }, [selected]);
 
     return (
-        <main className="main-comic-gallery">
+        <div className="main-comic-gallery">
             <h1>本編</h1>
 
             {/* フィルターUI */}
@@ -102,7 +102,7 @@ export default function MainComicPage() {
             {selected && (
                 <div className='main-comic-modal' onClick={() => setSelected(null)}>
                     <div className='main-comic-pages' onClick={(e) => e.stopPropagation()}>
-                        <ComicPages key={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
+                        <ComicPages key={selected.title} altPrefix={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
 
                         {/* あとがきリンク */}
                         {selected.URL && (
@@ -126,6 +126,6 @@ export default function MainComicPage() {
                     <ChevronDoubleUpIcon className="scroll-icon" />
                 </button>
             )}
-        </main>
+        </div>
     );
 }

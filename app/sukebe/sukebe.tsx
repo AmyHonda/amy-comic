@@ -43,7 +43,7 @@ export default function SukebePage() {
   });
 
     return (
-        <main className="sukebe-gallery">
+        <div className="sukebe-gallery">
             <h1>スケベ</h1>
 
             {/* 並び替えボタン */}
@@ -77,7 +77,7 @@ export default function SukebePage() {
                         className={`sukebe-pages ${selected.pages.length === 1 ? 'single-image' : ''}`}
                         onClick={(e) => e.stopPropagation()}
                     >   
-                        <ComicPages key={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
+                        <ComicPages key={selected.title} altPrefix={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
                         {/* あとがきリンク */}
                         {selected.URL && (
                             <a
@@ -93,6 +93,6 @@ export default function SukebePage() {
                     </div>
                 </div>
             )}
-        </main>
+        </div>
     );
 }

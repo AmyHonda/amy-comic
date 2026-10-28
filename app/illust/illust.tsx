@@ -38,7 +38,7 @@ export default function IllustGalleryPage() {
   }, [selected]);
 
   return (
-    <main className="illust-gallery">
+    <div className="illust-gallery">
       <h1>イラスト</h1>
 
       <div className="gallery">
@@ -85,6 +85,6 @@ export default function IllustGalleryPage() {
           <ChevronDoubleUpIcon className="scroll-icon" />
         </button>
       )}
-    </main>
+    </div>
   );
 }

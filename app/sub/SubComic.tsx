@@ -64,7 +64,7 @@ export default function SubComic() {
   });
 
   return (
-    <main className='sub-comic-gallery'>
+    <div className='sub-comic-gallery'>
       <h1>番外編</h1>
 
       {/* 並び替えボタン */}
@@ -96,7 +96,7 @@ export default function SubComic() {
       {selected && (
         <div className='sub-comic-modal' onClick={() => setSelected(null)}>
           <div className='sub-comic-pages' onClick={(e) => e.stopPropagation()}>
-            <ComicPages key={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
+            <ComicPages key={selected.title} altPrefix={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
             {/* あとがきリンク */}
             {selected.URL && (
               <a
@@ -118,6 +118,6 @@ export default function SubComic() {
           <ChevronDoubleUpIcon className="scroll-icon" />
         </button>
       )}
-    </main>
+    </div>
   );
 }

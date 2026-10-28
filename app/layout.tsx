@@ -13,7 +13,7 @@ const OGP_IMAGE = '/ogp-square.jpg'; // 968x968 正方形(JPEG)
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: SITE_NAME,
+  title: { default: SITE_NAME, template: `%s | ${SITE_NAME}` },
   description: 'エイミーコミックです。高校生男女のラブコメ一次創作漫画「好きって言わせてやる！」を描いています。',
   icons: {
     icon: '/favicon.ico?v=2',

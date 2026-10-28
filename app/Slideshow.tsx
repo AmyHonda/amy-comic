@@ -22,7 +22,7 @@ export default function Slideshow() {
 }, []);
 
   return (
-    <main className='home'>
+    <div className='home'>
       <div className='slideshow'>
         {images.map((src, index) => (
           <img
@@ -33,6 +33,6 @@ export default function Slideshow() {
           />
         ))}
       </div>
-    </main>
+    </div>
   );
 }

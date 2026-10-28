@@ -12,6 +12,8 @@ type Settled = Record<number, 'ok' | 'error'>;
 type ComicPagesProps = {
     pages: string[];
     onImageClick?: () => void;
+    /** alt テキストの先頭に付ける作品タイトル */
+    altPrefix?: string;
     /** すべての画像が表示されたあとに出す内容（あとがきリンクなど） */
     children?: ReactNode;
 };
@@ -21,7 +23,7 @@ type ComicPagesProps = {
  * 読み込み中のページにはスピナーを出し、前のページが揃うまで次は表示しない。
  * 親側では、別の作品に切り替えるとき key を変えてリセットすること。
  */
-export default function ComicPages({ pages, onImageClick, children }: ComicPagesProps) {
+export default function ComicPages({ pages, onImageClick, altPrefix, children }: ComicPagesProps) {
     const [settled, setSettled] = useState<Settled>({});
 
     const mark = useCallback((i: number, result: 'ok' | 'error') => {
@@ -52,7 +54,7 @@ export default function ComicPages({ pages, onImageClick, children }: ComicPages
                     <img
                         key={i}
                         src={src}
-                        alt={`page ${i + 1}`}
+                        alt={altPrefix ? `${altPrefix} ${i + 1}ページ目` : `page ${i + 1}`}
                         style={visible ? undefined : { display: 'none' }}
                         onLoad={() => mark(i, 'ok')}
                         onError={() => mark(i, 'error')}
