@@ -6,6 +6,7 @@ import { ChevronDoubleUpIcon } from "@heroicons/react/24/solid";
 import { illustrations, type Illustration } from "./illustData";
 import "../../styles/illust.css";
 
+import { SpinnerImage } from '../ComicPages';
 export default function IllustGalleryPage() {
   const [selected, setSelected] = useState<Illustration | null>(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -59,7 +60,7 @@ export default function IllustGalleryPage() {
             className="illust-modal-content"
             onClick={(e) => e.stopPropagation()}
           >
-            <img src={selected.full} alt={selected.alt} />
+            <SpinnerImage key={selected.full} src={selected.full} alt={selected.alt} />
 
             {selected.comment.trim() !== "" && (
               <div className="illust-comment">

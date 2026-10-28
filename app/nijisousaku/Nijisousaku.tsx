@@ -5,6 +5,7 @@ import { nijisousakuList, type NijisousakuItem } from './NijisousakuData';
 import { ChevronDoubleUpIcon } from '@heroicons/react/24/solid';
 import '../../styles/nijisousaku.css';
 
+import ComicPages from '../ComicPages';
 export default function Nijisousaku() {
   const [selected, setSelected] = useState<NijisousakuItem | null>(null);
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
@@ -87,15 +88,7 @@ export default function Nijisousaku() {
       {selected && (
         <div className="fan-modal" onClick={() => setSelected(null)}>
           <div className="fan-pages" onClick={(e) => e.stopPropagation()}>
-            {selected.pages.map((page, i) => (
-              <img
-                key={i}
-                src={page}
-                alt={`page ${i + 1}`}
-                loading="lazy"
-                onClick={() => setSelected(null)}
-              />
-            ))}
+            <ComicPages key={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
 
             {/* つづくボタン（クリックしても反応しない） */}
             {selected.isContinued && (
@@ -113,6 +106,7 @@ export default function Nijisousaku() {
                 あとがきを読む
               </a>
             )}
+            </ComicPages>
           </div>
         </div>
       )}

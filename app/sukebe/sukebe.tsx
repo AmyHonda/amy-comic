@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { sukebeList } from "./suekebeData";
 import '../../styles/sukebe.css';
 
+import ComicPages from '../ComicPages';
 type SukebeItem = {
     title: string;
     thumbnail: string;
@@ -76,15 +77,7 @@ export default function SukebePage() {
                         className={`sukebe-pages ${selected.pages.length === 1 ? 'single-image' : ''}`}
                         onClick={(e) => e.stopPropagation()}
                     >   
-                        {selected.pages.map((page, i) => (
-                            <img
-                                key={i}
-                                src={page}
-                                alt={`page ${i + 1}`}
-                                loading="lazy"
-                                onClick={() => setSelected(null)}
-                            />
-                        ))}
+                        <ComicPages key={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
                         {/* あとがきリンク */}
                         {selected.URL && (
                             <a
@@ -96,6 +89,7 @@ export default function SukebePage() {
                             あとがきを読む
                         </a>
                         )}
+                        </ComicPages>
                     </div>
                 </div>
             )}

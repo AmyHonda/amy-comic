@@ -5,6 +5,7 @@ import { subComics } from './SubComicData';
 import { ChevronDoubleUpIcon } from '@heroicons/react/24/solid';
 import '../../styles/subComic.css';
 
+import ComicPages from '../ComicPages';
 type SubComic = {
   title: string;
   thumbnail: string;
@@ -95,15 +96,7 @@ export default function SubComic() {
       {selected && (
         <div className='sub-comic-modal' onClick={() => setSelected(null)}>
           <div className='sub-comic-pages' onClick={(e) => e.stopPropagation()}>
-            {selected.pages.map((page, i) => (
-              <img
-                key={i}
-                src={page}
-                alt={`page ${i + 1}`}
-                loading="lazy"
-                onClick={() => setSelected(null)}
-              />
-            ))}
+            <ComicPages key={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
             {/* あとがきリンク */}
             {selected.URL && (
               <a
@@ -115,6 +108,7 @@ export default function SubComic() {
                 あとがきを読む
               </a>
             )}
+            </ComicPages>
           </div>
         </div>
       )}

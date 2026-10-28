@@ -6,6 +6,7 @@ import { mainComics, type MainComic } from "./mainComicData";
 import { ChevronDoubleUpIcon } from '@heroicons/react/24/solid';
 import '../../styles/mainComic.css';
 
+import ComicPages from '../ComicPages';
 export default function MainComicPage() {
     const [selected, setSelected] = useState<MainComic | null>(null);
     const [filter, setFilter] = useState(0); //0: 全て表示
@@ -101,14 +102,7 @@ export default function MainComicPage() {
             {selected && (
                 <div className='main-comic-modal' onClick={() => setSelected(null)}>
                     <div className='main-comic-pages' onClick={(e) => e.stopPropagation()}>
-                        {selected.pages.map((page, i) => (
-                            <img
-                                key={i}
-                                src={page}
-                                alt={`page ${i + 1}`}
-                                loading="lazy"
-                                onClick={() => setSelected(null)} />
-                        ))}
+                        <ComicPages key={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
 
                         {/* あとがきリンク */}
                         {selected.URL && (
@@ -121,6 +115,7 @@ export default function MainComicPage() {
                             あとがきを読む
                         </a>
                         )}
+                        </ComicPages>
                     </div>
                 </div>
             )}
