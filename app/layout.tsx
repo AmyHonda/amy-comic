@@ -9,7 +9,7 @@ import Header from './Header';
 const SITE_URL = 'https://www.amy-comic.com';
 const SITE_NAME = 'エイミーコミック';
 const DESCRIPTION = '高校生男女のラブコメ一次創作漫画「好きって言わせてやる！」を連載しています。';
-const OGP_IMAGE = '/ogp.png'; // 968x968 正方形
+const OGP_IMAGE = '/ogp-square.jpg'; // 968x968 正方形(JPEG)
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     type: 'website',
     locale: 'ja_JP',
-    images: [{ url: OGP_IMAGE, width: 968, height: 968, alt: SITE_NAME }],
+    images: [{ url: OGP_IMAGE, width: 968, height: 968, type: 'image/jpeg', alt: SITE_NAME }],
   },
   twitter: {
     card: 'summary', // 正方形画像は summary で切り抜かれずに表示される
