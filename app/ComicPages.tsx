@@ -4,6 +4,7 @@
 import { useCallback, useState, type ReactNode } from 'react';
 import '../styles/comicPages.css';
 
+import { optimizeImage } from '@/lib/cloudinary';
 // 何枚先まで先読みするか（表示は必ず1枚目から順番通り）
 const LOOKAHEAD = 2;
 
@@ -53,7 +54,7 @@ export default function ComicPages({ pages, onImageClick, altPrefix, children }:
                 return (
                     <img
                         key={i}
-                        src={src}
+                        src={optimizeImage(src)}
                         alt={altPrefix ? `${altPrefix} ${i + 1}ページ目` : `page ${i + 1}`}
                         style={visible ? undefined : { display: 'none' }}
                         onLoad={() => mark(i, 'ok')}
@@ -94,7 +95,7 @@ export function SpinnerImage({ src, alt, className }: { src: string; alt: string
                 <p className="comic-error">画像を読み込めませんでした</p>
             ) : (
                 <img
-                    src={src}
+                    src={optimizeImage(src)}
                     alt={alt}
                     className={className}
                     style={state === 'ok' ? undefined : { display: 'none' }}

@@ -6,6 +6,7 @@ import { ChevronDoubleUpIcon } from "@heroicons/react/24/solid";
 import { aiWorks, type AiWork } from "./aiWorksData";
 import "../../styles/aiWorks.css";
 
+import { optimizeImage } from '@/lib/cloudinary';
 export default function AiWorks() {
   const [selected, setSelected] = useState<AiWork | null>(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -64,7 +65,7 @@ export default function AiWorks() {
             <div className="ai-work-thumb">
               {item.isNew && <span className="ai-new-badge">NEW</span>}
 
-              <img src={item.thumbnailUrl} alt={`${item.type} ${item.characters.join("・")}`} loading="lazy" />
+              <img src={optimizeImage(item.thumbnailUrl)} alt={`${item.type} ${item.characters.join("・")}`} loading="lazy" />
 
               {item.youtubeId && (
                 <span className="ai-play-badge">▶ 動画を見る</span>
@@ -116,13 +117,13 @@ export default function AiWorks() {
             ) : selected.imageUrl ? (
               <img
                 className="ai-modal-image"
-                src={selected.imageUrl}
+                src={optimizeImage(selected.imageUrl)}
                 alt={`${selected.type} ${selected.characters.join("・")}`}
               />
             ) : (
               <img
                 className="ai-modal-image"
-                src={selected.thumbnailUrl}
+                src={optimizeImage(selected.thumbnailUrl)}
                 alt={`${selected.type} ${selected.characters.join("・")}`}
               />
             )}

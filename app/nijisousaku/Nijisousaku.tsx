@@ -6,6 +6,7 @@ import { ChevronDoubleUpIcon } from '@heroicons/react/24/solid';
 import '../../styles/nijisousaku.css';
 
 import ComicPages from '../ComicPages';
+import { optimizeImage } from '@/lib/cloudinary';
 export default function Nijisousaku() {
   const [selected, setSelected] = useState<NijisousakuItem | null>(null);
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
@@ -78,7 +79,7 @@ export default function Nijisousaku() {
         <div className="fan-list">
           {sortedList.map((item, index) => (
             <div key={index} className="fan-item" onClick={() => setSelected(item)}>
-              <img src={item.thumbnail} alt={item.title} loading="lazy" className="fan-thumb" />
+              <img src={optimizeImage(item.thumbnail)} alt={item.title} loading="lazy" className="fan-thumb" />
               <p className="fan-title">{item.title}</p>
             </div>
           ))}
