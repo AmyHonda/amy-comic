@@ -13,7 +13,6 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882884/%E5%A5%BD%E3%81%8D5_41_5_jrfhdp.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1780882887/%E5%A5%BD%E3%81%8D5_41_6_gxlzsn.jpg',
         ],
-        URL: 'https://www.amy-comic.com/blog/9rwlrv21-7',
     },
     {
         chapter: 5,
@@ -30,7 +29,6 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1777617523/%E5%A5%BD%E3%81%8D5-40_6_zeaoky.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1777617543/%E5%A5%BD%E3%81%8D5-40_7_mopsdq.jpg',
         ],
-        URL: 'https://www.amy-comic.com/blog/n_0bz407hwaw',
     },
     {
         chapter: 5,
@@ -43,7 +41,6 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1777106952/%E5%A5%BD%E3%81%8D5_39_4_g23tzy.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1777106956/%E5%A5%BD%E3%81%8D5_39_5_r7nceb.jpg',
         ],
-        URL: 'https://www.amy-comic.com/blog/k3onmve-5',
     },
     {
         chapter: 5,
@@ -57,7 +54,6 @@ export const chapter5 = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671682/%E5%A5%BD%E3%81%8D5_38_5_ef3b74.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1776671681/%E5%A5%BD%E3%81%8D5_38_6_vnak0z.jpg',
         ],
-        URL: 'https://www.amy-comic.com/blog/v_9hixcp0f1',
     },
     {
         chapter: 5,

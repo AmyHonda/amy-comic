@@ -15,7 +15,6 @@ export const subComics = [
         //     '/images/sub/021/001.jpg',
         //     '/images/sub/021/002.jpg',
         // ],
-        URL:'https://www.amy-comic.com/blog/v8tu2qklfwc',
     },
     {
         title: '#5【2】10秒ルール',

@@ -1,63 +1,46 @@
 // app/layout.tsx
-'use client';
-import { useState, ReactNode } from "react";
+import type { ReactNode } from "react";
+import type { Metadata } from "next";
 import '../styles/global.css'
 import './globals.css'
-import Link from 'next/link';
-import Image from 'next/image';
 import { Analytics } from "@vercel/analytics/react";
+import Header from './Header';
+
+const SITE_URL = 'https://www.amy-comic.com';
+const SITE_NAME = 'エイミーコミック';
+const DESCRIPTION = '高校生男女のラブコメ一次創作漫画「好きって言わせてやる！」を連載しています。';
+const OGP_IMAGE = '/ogp.png'; // 968x968 正方形
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: SITE_NAME,
+  description: 'エイミーコミックです。高校生男女のラブコメ一次創作漫画「好きって言わせてやる！」を描いています。',
+  icons: {
+    icon: '/favicon.ico?v=2',
+    apple: '/apple-touch-icon.png',
+  },
+  openGraph: {
+    title: SITE_NAME,
+    description: DESCRIPTION,
+    url: '/',
+    siteName: SITE_NAME,
+    type: 'website',
+    locale: 'ja_JP',
+    images: [{ url: OGP_IMAGE, width: 968, height: 968, alt: SITE_NAME }],
+  },
+  twitter: {
+    card: 'summary', // 正方形画像は summary で切り抜かれずに表示される
+    title: SITE_NAME,
+    description: DESCRIPTION,
+    images: [OGP_IMAGE],
+  },
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <html lang="ja">
-      <head>
-        <link rel="icon" href="/favicon.ico?v=2" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-        <meta property="og:title" content="エイミーコミック" />
-        <meta property="og:description" content="高校生男女のラブコメ一次創作漫画「好きって言わせてやる！」を連載しています。" />
-        <meta property="og:image" content="/ogp.png" />
-        <meta property="og:url" content="https://www.amy-comic.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="エイミーコミック" />
-
-        <title>エイミーコミック</title>
-        <meta name="description" content="エイミーコミックです。高校生男女のラブコメ一次創作漫画「好きって言わせてやる！」を描いています。" />
-      </head>
       <body>
-        <header>
-          <div className="logo">
-            <Link href="/">
-              <Image src="/images/home/logo.png"
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{ width: '180px', height: 'auto' }}
-                alt="Amy Comic ロゴ"
-              />
-            </Link>
-          </div>
-          <button
-            className="hamburger"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            ≡
-          </button>
-
-          <nav className={`navbar ${isOpen ? "open" : ""}`}>
-            <Link href="/" onClick={() => setIsOpen(false)}>ホーム</Link>
-            <Link href="/characters" onClick={() => setIsOpen(false)}>登場人物</Link>
-            <Link href="/main" onClick={() => setIsOpen(false)}>本編</Link>
-            <Link href="/sub" onClick={() => setIsOpen(false)}>番外編</Link>
-            <Link href="/sukebe" onClick={() => setIsOpen(false)}>スケベ</Link>
-            <Link href="/illust" onClick={() => setIsOpen(false)}>イラスト</Link>
-            <Link href="/nijisousaku" onClick={() => setIsOpen(false)}>二次創作</Link>
-            <Link href="/ai" onClick={() => setIsOpen(false)}>AI作品</Link>
-            <Link href="/blog" onClick={() => setIsOpen(false)}>ブログ</Link>
-          </nav>
-        </header>
+        <Header />
 
         <main>
           {children}
