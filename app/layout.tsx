@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: SITE_NAME, template: `%s | ${SITE_NAME}` },
   description: 'エイミーコミックです。高校生男女のラブコメ一次創作漫画「好きって言わせてやる！」を描いています。',
+  verification: {
+    google: 'TSLsUGcm0my9okl0BE99up7il2TCWrZ3VaJy8JJOUvQ', // Google Search Console 所有権確認
+  },
   icons: {
     icon: '/favicon.ico?v=2',
     apple: '/apple-touch-icon.png',
