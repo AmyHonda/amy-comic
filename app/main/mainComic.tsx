@@ -8,7 +8,9 @@ import '../../styles/mainComic.css';
 
 import ComicPages from '../ComicPages';
 import { thumbImage } from '@/lib/cloudinary';
+import { useIsNew } from '@/lib/newBadge';
 export default function MainComicPage() {
+    const isNew = useIsNew();
     const [selected, setSelected] = useState<MainComic | null>(null);
     const [filter, setFilter] = useState(0); //0: 全て表示
     const [sortOrder, setSortOrder] = useState('desc');
@@ -92,7 +94,7 @@ export default function MainComicPage() {
             <div className="main-comic-list">
                 {filteredComics.map((comic, index) => (
                     <div key={index} className="main-comic-item" onClick={() => setSelected(comic)}>
-                        {comic.isNew && <span className="new-badge">NEW</span>}
+                        {isNew(comic.updatedAt) && <span className="new-badge">NEW</span>}
                         <img src={thumbImage(comic.thumbnail)} alt={comic.title} loading="lazy" className="main-comic-thumb" />
                         <p className="main-comic-title">{comic.title}</p>
                     </div>
@@ -104,6 +106,11 @@ export default function MainComicPage() {
                 <div className='main-comic-modal' onClick={() => setSelected(null)}>
                     <div className='main-comic-pages' onClick={(e) => e.stopPropagation()}>
                         <ComicPages key={selected.title} altPrefix={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
+
+                        {/* つづくボタン（クリックしても反応しない） */}
+                        {selected.isContinued && (
+                            <span className="afterword-link afterword-continued">つづく</span>
+                        )}
 
                         {/* あとがきリンク */}
                         {selected.URL && (

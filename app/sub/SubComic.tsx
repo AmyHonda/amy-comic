@@ -7,15 +7,18 @@ import '../../styles/subComic.css';
 
 import ComicPages from '../ComicPages';
 import { thumbImage } from '@/lib/cloudinary';
+import { useIsNew } from '@/lib/newBadge';
 type SubComic = {
   title: string;
   thumbnail: string;
   pages: string[];
   URL?: string;
-  isNew?: boolean;
+  updatedAt?: string; // 更新日 'YYYY-MM-DD'。この日から7日間だけ NEW バッジを表示（自動で消える）
+  isContinued?: boolean; // true にすると「つづく」ボタンを表示（クリックしても反応しない）
 };
 
 export default function SubComic() {
+  const isNew = useIsNew();
   const [selected, setSelected] = useState<SubComic | null>(null);
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -87,7 +90,7 @@ export default function SubComic() {
       <div className='sub-comic-list'>
         {sortedComics.map((comic, index) => (
           <div key={index} className="sub-comic-item" onClick={() => setSelected(comic)}>
-            {comic.isNew && <span className="sub-new-badge">NEW</span>}
+            {isNew(comic.updatedAt) && <span className="sub-new-badge">NEW</span>}
             <img src={thumbImage(comic.thumbnail)} alt={comic.title} loading="lazy" className="sub-comic-thumb" />
             <p className="sub-comic-title">{comic.title}</p>
           </div>
@@ -98,6 +101,11 @@ export default function SubComic() {
         <div className='sub-comic-modal' onClick={() => setSelected(null)}>
           <div className='sub-comic-pages' onClick={(e) => e.stopPropagation()}>
             <ComicPages key={selected.title} altPrefix={selected.title} pages={selected.pages} onImageClick={() => setSelected(null)}>
+            {/* つづくボタン（クリックしても反応しない） */}
+            {selected.isContinued && (
+              <span className="afterword-link afterword-continued">つづく</span>
+            )}
+
             {/* あとがきリンク */}
             {selected.URL && (
               <a

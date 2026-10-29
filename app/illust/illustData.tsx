@@ -3,7 +3,7 @@ export type Illustration = {
   thumb: string;
   full: string;
   alt: string;
-  isNew?: boolean;
+  updatedAt?: string; // 更新日 'YYYY-MM-DD'。この日から7日間だけ NEW バッジを表示（自動で消える）
   comment: string; //
 };
 
@@ -13,7 +13,7 @@ export const illustrations: Illustration[] = [
         thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1787301674/%E3%81%BB%E3%81%AE%E3%81%BC%E3%81%AE_%E8%91%B5_%E6%A4%BF_%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC_dwgibo.jpg",
         full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1787301276/%E3%81%BB%E3%81%AE%E3%81%BC%E3%81%AE_%E8%91%B5_%E6%A4%BF_aghmz5.jpg',
         alt: '',
-        // isNew: true,
+        // updatedAt: 'YYYY-MM-DD',
         comment: `葵と椿のほのぼの夏イラストです☀️
                   有線イヤホンはいいぞ`,
     },
@@ -22,7 +22,7 @@ export const illustrations: Illustration[] = [
         thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1774658024/D162BBB1-B6AF-4B53-8239-6BDC5E60B3A2_1_201_a_dmwqql.jpg",
         full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1774658036/EB44C755-F10A-49D0-AFFC-EBD6DDAFCB91_wfnpqs.jpg',
         alt: '',
-        // isNew: true,
+        // updatedAt: 'YYYY-MM-DD',
         comment: `バレンタイン企画３回目！
                   最後は楓と桜です🫶
                   やっとペア全員描けました✨`,
@@ -32,7 +32,7 @@ export const illustrations: Illustration[] = [
         thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1772439937/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%93%AE_%EF%B8%8F%E8%98%AD_3_sn7h4z.jpg",
         full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1772439948/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%93%AE_%EF%B8%8F%E8%98%AD_n1gzxw.jpg',
         alt: '',
-        // isNew: true,
+        // updatedAt: 'YYYY-MM-DD',
         comment: `バレンタイン企画２回目！
                   今回は蓮と蘭のイラストです🫶
                   第三回目もよろぴくです😎`,
@@ -42,7 +42,7 @@ export const illustrations: Illustration[] = [
         thumb: "https://res.cloudinary.com/dqx46otx4/image/upload/v1770620253/thumb024_shvshy.jpg",
         full: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1770619167/%E3%83%8F%E3%82%99%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%91%B5_%EF%B8%8F%E6%A4%BF_h9771s.jpg',
         alt: '',
-        // isNew: true,
+        // updatedAt: 'YYYY-MM-DD',
         comment: `バレンタイン企画で制服姿じゃない
                   葵と椿のイラストを描きました✏️ 
                   第二弾もありますので、よろぴく🫶`,

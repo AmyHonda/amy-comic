@@ -7,7 +7,9 @@ import { aiWorks, type AiWork } from "./aiWorksData";
 import "../../styles/aiWorks.css";
 
 import { optimizeImage, thumbImage } from '@/lib/cloudinary';
+import { useIsNew } from '@/lib/newBadge';
 export default function AiWorks() {
+  const isNew = useIsNew();
   const [selected, setSelected] = useState<AiWork | null>(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const scrollYRef = useRef(0);
@@ -63,7 +65,7 @@ export default function AiWorks() {
             }}
           >
             <div className="ai-work-thumb">
-              {item.isNew && <span className="ai-new-badge">NEW</span>}
+              {isNew(item.updatedAt) && <span className="ai-new-badge">NEW</span>}
 
               <img src={thumbImage(item.thumbnailUrl, 700)} alt={`${item.type} ${item.characters.join("・")}`} loading="lazy" />
 

@@ -11,7 +11,8 @@ export type MainComic = {
     thumbnail: string;
     pages: string[];
     URL?: string;
-    isNew?: boolean;
+    updatedAt?: string; // 更新日 'YYYY-MM-DD'。この日から7日間だけ NEW バッジを表示（自動で消える）
+    isContinued?: boolean; // true にすると「つづく」ボタンを表示（クリックしても反応しない）
 };
 
 export const mainComics: MainComic[] = [

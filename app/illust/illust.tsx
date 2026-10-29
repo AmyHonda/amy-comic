@@ -8,7 +8,9 @@ import "../../styles/illust.css";
 
 import { SpinnerImage } from '../ComicPages';
 import { thumbImage } from '@/lib/cloudinary';
+import { useIsNew } from '@/lib/newBadge';
 export default function IllustGalleryPage() {
+  const isNew = useIsNew();
   const [selected, setSelected] = useState<Illustration | null>(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const scrollYRef = useRef(0);
@@ -49,7 +51,7 @@ export default function IllustGalleryPage() {
             className="illust-thumb-wrapper"
             onClick={() => setSelected(item)}
           >
-            {item.isNew && <span className="new-badge">NEW</span>}
+            {isNew(item.updatedAt) && <span className="new-badge">NEW</span>}
             <img src={thumbImage(item.thumb)} alt={item.alt} loading="lazy" />
           </div>
         ))}

@@ -1,7 +1,7 @@
 export const subComics = [
     {
         title: '27.#5 本編おまけ',
-        isNew: true,
+        updatedAt: '2026-10-16',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135803/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_n1goo9.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135804/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC_flydvk.jpg',
@@ -72,6 +72,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352140/006_srdasa.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352138/007_rwc3sj.jpg',
         ],
+        isContinued: true,
         // thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352107/000_pvguo1.jpg',
         // pages: [
         //     'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352108/001_mkiqcz.jpg',
@@ -112,6 +113,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352076/006_agwpxv.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352105/007_wxkamc.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/023/000.jpg',
         // pages: [
         //     '/images/sub/023/001.jpg',
@@ -136,6 +138,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352031/007_y0gafg.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352026/008_p3gr7x.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/022/000.jpg',
         // pages: [
         //     '/images/sub/022/001.jpg',
@@ -221,6 +224,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351890/004_hwrowf.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351911/005_ndxlcg.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/016/000.jpg',
         // pages: [
         //     '/images/sub/016/001.jpg',
@@ -241,6 +245,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351865/005_ok3hkd.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351872/006_winqam.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/015/000.jpg',
         // pages: [
         //     '/images/sub/015/001.jpg',
@@ -262,6 +267,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351837/005_ppnapt.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351842/006_nbdymj.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/014/000.jpg',
         // pages: [
         //     '/images/sub/014/001.jpg',
@@ -283,6 +289,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351808/005_bmr7sg.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351816/006_dobtpa.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/013/000.jpg',
         // pages: [
         //     '/images/sub/013/001.jpg',
@@ -303,6 +310,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351798/004_onkidg.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351802/005_gnilev.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/012/000.jpg',
         // pages: [
         //     '/images/sub/012/001.jpg',
@@ -320,6 +328,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351779/002_qtakfd.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351781/003_bbuakd.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/011/000.jpg',
         // pages: [
         //     '/images/sub/011/001.jpg',
@@ -336,6 +345,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351769/003_vtjebe.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351773/004_lws1t1.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/010/000.jpg',
         // pages: [
         //     '/images/sub/010/001.jpg',
@@ -354,6 +364,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351768/004_pi2o9z.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351774/005_aanurn.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/009/000.jpg',
         // pages: [
         //     '/images/sub/009/001.jpg',
@@ -372,6 +383,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351737/003_wrwjga.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351749/004_bjkveb.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/008/000.jpg',
         // pages: [
         //     '/images/sub/008/001.jpg',
@@ -390,6 +402,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351754/004_nd3w1l.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351729/005_qw7mve.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/007/000.jpg',
         // pages: [
         //     '/images/sub/007/001.jpg',
@@ -408,6 +421,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351706/003_w1auz3.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351714/004_ihajfe.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/006/000.jpg',
         // pages: [
         //     '/images/sub/006/001.jpg',
@@ -428,6 +442,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351694/006_ff574f.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351687/007_eosr9r.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/005/000.jpg',
         // pages: [
         //     '/images/sub/005/001.jpg',
@@ -448,6 +463,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351670/003_pb6s4x.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351675/004_fcysad.jpg',
         ],
+        isContinued: true,
         // thumbnail: '/images/sub/004/000.jpg',
         // pages: [
         //     '/images/sub/004/001.jpg',

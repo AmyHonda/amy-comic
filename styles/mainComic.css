@@ -187,6 +187,16 @@ button {
   background-color: #ffd966;
 }
 
+/* 「つづく」ボタン（クリックしても反応しない） */
+.afterword-continued {
+  cursor: default;
+  user-select: none;
+}
+
+.afterword-continued:hover {
+  background-color: #ffecb3;
+}
+
 
 
 @media (max-width: 600px) {
