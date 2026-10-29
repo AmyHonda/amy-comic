@@ -261,4 +261,56 @@ body.modal-open {
   }
 
 }
+/* PC(1024px以上): 左に「クリックして拡大」と画像、右に名前と説明文を並べる */
+@media (min-width: 1024px) {
+  .character {
+    max-width: 1040px; /* 他の一覧ページとそろえる */
+    padding-bottom: 48px; /* 画像とフッターの間の余白 */
+  }
+
+  .character-detail {
+    /* 画像の大きさ: 最大480px。画面が低いときは、下の余白も含めて1画面に収まるように小さくする */
+    --character-image-size: clamp(340px, calc(100dvh - 400px), 480px);
+    display: grid;
+    /* 画像 : テキスト = 6 : 4。2列まとめて中央に置く */
+    grid-template-columns: var(--character-image-size) calc(var(--character-image-size) * 2 / 3);
+    column-gap: 40px;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .character-detail .click {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0 0 12px;
+  }
+
+  .character-detail .main-image {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* 右側のテキストは、画像の上端にそろえて、左揃えにする */
+  .character-text {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+  }
+
+  .character-text h2 {
+    margin: 0 0 12px;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .character-text .description {
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    text-align: left;
+    line-height: 1.9;
+  }
+}
 }

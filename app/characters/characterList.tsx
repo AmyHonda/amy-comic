@@ -41,17 +41,30 @@ export default function Character() {
         ))}
       </div>
 
-      <p className="click">⇩クリックして拡大</p>
+      {/* PC(lg以上)では 左: 「クリックして拡大」と画像 / 右: 名前と説明文 の2列になる */}
+      <div className="character-detail">
+        <p className="click">⇩クリックして拡大</p>
 
-      <img
-        src={character.url}
-        alt={character.name}
-        className="main-image"
-        onClick={() => {
-          setSlideIndex(0);
-          setIsModalOpen(true);
-        }}
-      />
+        <img
+          src={character.url}
+          alt={character.name}
+          className="main-image"
+          onClick={() => {
+            setSlideIndex(0);
+            setIsModalOpen(true);
+          }}
+        />
+
+        <div className="character-text">
+          <h2>
+            {character.name}
+            <span style={{ marginLeft: '8px', fontSize: '1.1rem', color: '#666'}}>
+              {character.kana}  
+            </span>  
+          </h2>
+          <p className="description">{character.description}</p>
+        </div>
+      </div>
 
       {/* モーダル表示 */}
       {isModalOpen && (
@@ -70,14 +83,6 @@ export default function Character() {
           </div>
         </div>
       )}
-
-      <h2>
-        {character.name}
-        <span style={{ marginLeft: '8px', fontSize: '1.1rem', color: '#666'}}>
-          {character.kana}  
-        </span>  
-      </h2>
-      <p className="description">{character.description}</p>
     </div>
   );
 }
