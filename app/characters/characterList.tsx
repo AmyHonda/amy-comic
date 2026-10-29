@@ -28,7 +28,7 @@ export default function Character() {
 
   return (
     <div className="character">
-      <h1>登 場 人 物</h1>
+      <h1>登場人物</h1>
       <div className="thumbnails">
         {characterList.map((item, i) => (
           <img

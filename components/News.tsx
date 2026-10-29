@@ -28,13 +28,13 @@ async function getNews(): Promise<NewsItem[]> {
   }
 }
 
-export default async function News() {
+export default async function News({ className = "" }: { className?: string }) {
   const newsItems = await getNews();
   if (newsItems.length === 0) return null;
 
   return (
-    <section className="bg-amy-yellow-light px-4 pb-16 font-zenmaru">
-      <div className="mx-auto max-w-md md:max-w-xl">
+    <section className={`bg-amy-yellow-light px-4 pb-16 font-zenmaru ${className}`}>
+      <div className="mx-auto max-w-md md:max-w-xl lg:max-w-none">
         <h2 className="mb-5 text-center font-mochiy text-2xl text-amy-gold">
           News
         </h2>

@@ -15,7 +15,8 @@ body.modal-open {
 .illust-gallery {
     padding: 40px 20px;
     text-align: center;
-    margin-top: 30px;
+    margin: 30px auto 0;
+    max-width: 1040px; /* PCで広がりすぎないよう、全ページでそろえる */
 }
 
 .illust-gallery h1 {
@@ -200,7 +201,7 @@ body.modal-open {
     .illust-gallery h1 {
         font-size: 1.8rem;
         margin-top: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .gallery {
