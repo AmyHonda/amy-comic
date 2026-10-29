@@ -7,7 +7,7 @@ import { illustrations, type Illustration } from "./illustData";
 import "../../styles/illust.css";
 
 import { SpinnerImage } from '../ComicPages';
-import { optimizeImage } from '@/lib/cloudinary';
+import { thumbImage } from '@/lib/cloudinary';
 export default function IllustGalleryPage() {
   const [selected, setSelected] = useState<Illustration | null>(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -50,7 +50,7 @@ export default function IllustGalleryPage() {
             onClick={() => setSelected(item)}
           >
             {item.isNew && <span className="new-badge">NEW</span>}
-            <img src={optimizeImage(item.thumb)} alt={item.alt} loading="lazy" />
+            <img src={thumbImage(item.thumb)} alt={item.alt} loading="lazy" />
           </div>
         ))}
       </div>

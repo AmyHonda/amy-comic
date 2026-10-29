@@ -22,3 +22,12 @@ export function optimizeImage(url: string, transform = 'f_auto,q_auto'): string 
 
   return `${head}${transform}/${rest}`;
 }
+
+/**
+ * 一覧用サムネイル。表示サイズに合わせて縮小して配信する(元画像が大きくても転送量が小さくなる)。
+ * - c_limit: 指定幅より大きい場合だけ縮小(拡大はしない・縦横比も変えない)
+ * - width は「表示幅の約2倍」を目安にする(Retina 向け)
+ */
+export function thumbImage(url: string, width = 480): string {
+  return optimizeImage(url, `f_auto,q_auto,c_limit,w_${width}`);
+}

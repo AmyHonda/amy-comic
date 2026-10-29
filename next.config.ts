@@ -12,6 +12,18 @@ const nextConfig: NextConfig = {
         destination: 'https://www.amy-comic.com/:path*',
         permanent: true,
       },
+      // 旧ブログ(/blog/... と、はてな時代の /entry/...)は note に移したので、そちらへ転送する。
+      // 記事ごとの対応先は無いため、note のトップに集約する。
+      {
+        source: '/blog/:path*',
+        destination: 'https://note.com/emiko_xyz',
+        permanent: true,
+      },
+      {
+        source: '/entry/:path*',
+        destination: 'https://note.com/emiko_xyz',
+        permanent: true,
+      },
     ];
   },
 };

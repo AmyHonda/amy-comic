@@ -7,7 +7,7 @@ import { ChevronDoubleUpIcon } from '@heroicons/react/24/solid';
 import '../../styles/mainComic.css';
 
 import ComicPages from '../ComicPages';
-import { optimizeImage } from '@/lib/cloudinary';
+import { thumbImage } from '@/lib/cloudinary';
 export default function MainComicPage() {
     const [selected, setSelected] = useState<MainComic | null>(null);
     const [filter, setFilter] = useState(0); //0: 全て表示
@@ -93,7 +93,7 @@ export default function MainComicPage() {
                 {filteredComics.map((comic, index) => (
                     <div key={index} className="main-comic-item" onClick={() => setSelected(comic)}>
                         {comic.isNew && <span className="new-badge">NEW</span>}
-                        <img src={optimizeImage(comic.thumbnail)} alt={comic.title} loading="lazy" className="main-comic-thumb" />
+                        <img src={thumbImage(comic.thumbnail)} alt={comic.title} loading="lazy" className="main-comic-thumb" />
                         <p className="main-comic-title">{comic.title}</p>
                     </div>
                 ))}

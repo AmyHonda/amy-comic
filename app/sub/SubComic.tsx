@@ -6,7 +6,7 @@ import { ChevronDoubleUpIcon } from '@heroicons/react/24/solid';
 import '../../styles/subComic.css';
 
 import ComicPages from '../ComicPages';
-import { optimizeImage } from '@/lib/cloudinary';
+import { thumbImage } from '@/lib/cloudinary';
 type SubComic = {
   title: string;
   thumbnail: string;
@@ -88,7 +88,7 @@ export default function SubComic() {
         {sortedComics.map((comic, index) => (
           <div key={index} className="sub-comic-item" onClick={() => setSelected(comic)}>
             {comic.isNew && <span className="sub-new-badge">NEW</span>}
-            <img src={optimizeImage(comic.thumbnail)} alt={comic.title} loading="lazy" className="sub-comic-thumb" />
+            <img src={thumbImage(comic.thumbnail)} alt={comic.title} loading="lazy" className="sub-comic-thumb" />
             <p className="sub-comic-title">{comic.title}</p>
           </div>
         ))}

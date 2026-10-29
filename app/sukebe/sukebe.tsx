@@ -5,7 +5,7 @@ import { sukebeList } from "./suekebeData";
 import '../../styles/sukebe.css';
 
 import ComicPages from '../ComicPages';
-import { optimizeImage } from '@/lib/cloudinary';
+import { thumbImage } from '@/lib/cloudinary';
 type SukebeItem = {
     title: string;
     thumbnail: string;
@@ -66,7 +66,7 @@ export default function SukebePage() {
             <div className="sukebe-list">
                 {sortedComics.map((sukebe, index) => (
                     <div key={index} className="sukebe-item" onClick={() => setSelected(sukebe)}>
-                        <img src={optimizeImage(sukebe.thumbnail)} alt={sukebe.title} loading="lazy" className="sukebe-thumb" />
+                        <img src={thumbImage(sukebe.thumbnail)} alt={sukebe.title} loading="lazy" className="sukebe-thumb" />
                         <p className="sukebe-title">{sukebe.title}</p>
                     </div>
                 ))}
