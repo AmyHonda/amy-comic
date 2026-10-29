@@ -20,7 +20,7 @@ const menuItems: MenuItem[] = [
 ];
 
 const linkClass =
-  "block py-3 text-xl font-bold text-amy-ink no-underline transition hover:opacity-60";
+  "block py-2 text-lg font-bold text-amy-ink no-underline transition hover:opacity-60 [@media(max-height:620px)]:py-1";
 
 export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,12 +86,12 @@ export default function SiteHeader() {
         >
           <h2 id="site-menu-title" className="sr-only">サイトメニュー</h2>
 
-          <div className="relative flex min-h-[30rem] w-[70%] max-w-[280px] -translate-y-12 flex-col justify-center rounded-[3rem] bg-amy-yellow px-6 py-10 shadow-2xl">
+          <div className="relative flex w-[70%] max-w-[280px] -translate-y-12 flex-col justify-center rounded-[3rem] bg-amy-yellow px-6 py-8 shadow-2xl">
             <nav
               aria-label="メインメニュー"
-              className="max-h-[calc(100dvh-16rem)] w-full overflow-y-auto"
+              className="max-h-[calc(100dvh-11rem)] w-full overflow-y-auto"
             >
-              <ul className="m-0 flex list-none flex-col gap-2 p-0 text-center">
+              <ul className="m-0 flex list-none flex-col gap-1 p-0 text-center">
                 {menuItems.map((item) => (
                   <li key={item.href}>
                     {item.external ? (
