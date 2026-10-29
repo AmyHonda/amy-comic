@@ -1,6 +1,6 @@
 export const subComics = [
     {
-        title: '27.#5【3】本編おまけ',
+        title: '27.#5 本編おまけ',
         isNew: true,
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135803/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_n1goo9.jpg',
         pages: [
@@ -17,7 +17,7 @@ export const subComics = [
         // ],
     },
     {
-        title: '26.#5【2】10秒ルール',
+        title: '26.10秒ルール',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351994/000_vsbfhz.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352000/001_mbpukh.jpg',
@@ -31,7 +31,7 @@ export const subComics = [
         URL:'https://www.amy-comic.com/entry/2025/07/13/185041',
     },
     {
-        title: '25.#5【1】お姫様抱っこ',
+        title: '25.お姫様抱っこ',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351974/000_wqwcts.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351990/001_co61t2.jpg',
@@ -48,7 +48,7 @@ export const subComics = [
         // ],
     },
     {
-        title: '24.#4 番外編【2-2】',
+        title: '24.#4【2-2】デート？',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352159/003_s1rl5j.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352152/001_rygxnw.jpg',
@@ -60,7 +60,7 @@ export const subComics = [
         ],
     },
     {
-        title: '23.#4 番外編【2-1】',
+        title: '23.#4【2-1】デート？',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352119/003_cxs334.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352123/001_iorwla.jpg',
@@ -82,7 +82,7 @@ export const subComics = [
         // ],
     },
     {
-        title: '22.#4 番外編【1-3】',
+        title: '22.#4【1-3】番外編',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352107/000_pvguo1.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352108/001_mkiqcz.jpg',
@@ -101,7 +101,7 @@ export const subComics = [
         // ],
     },
     {
-        title: '21.#4 番外編【1-2】',
+        title: '21.#4【1-2】番外編',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352042/000_xytg2d.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352074/001_bgt1rq.jpg',
@@ -124,7 +124,7 @@ export const subComics = [
         // ],
     },
     {
-        title: '20.#4 番外編【1-1】',
+        title: '20.#4【1-1】番外編',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352019/000_nx13ng.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754352039/001_k2f5xk.jpg',
@@ -149,7 +149,7 @@ export const subComics = [
         // ],
     },
     {
-        title: '19.#3【3】昼休み',
+        title: '19.#3 本編おまけ',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351949/000_p9jqnx.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351973/001_vihxmw.jpg',
@@ -166,7 +166,7 @@ export const subComics = [
         // ],
     },
     {
-        title: '18.#3【2】葵が編入する少し前の話＆おまけ',
+        title: '18.葵が編入する少し前の話＆おまけ',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351927/000_gieufm.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351988/001_bweeyp.jpg',
@@ -457,7 +457,7 @@ export const subComics = [
         // ],
     },
     {
-        title: '03.#3【1】誰もいない今のうちに・・',
+        title: '03.誰もいない今のうちに・・',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351649/000_l8k6qv.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351663/001_m8xush.jpg',
@@ -472,7 +472,7 @@ export const subComics = [
         // ],
     },
     {
-        title: '02.#1【2】写真もしまだ男子校に通っていたら・・',
+        title: '02.写真もしまだ男子校に通っていたら・・',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351641/000_oqdykz.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351644/001_izkajq.jpg',
@@ -489,7 +489,7 @@ export const subComics = [
         // ],
     },
     {
-        title: '01.#1【1】写真',
+        title: '01.写真',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351635/000_z8fnwq.jpg',
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754351632/001_rl1xq0.jpg',
