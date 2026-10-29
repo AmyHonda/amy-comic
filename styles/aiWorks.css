@@ -1,5 +1,7 @@
 /* styles/aiWorks.css */
 
+@layer legacy {
+
 .ai-works-page {
   min-height: 100vh;
   padding: 110px 20px 60px;
@@ -323,4 +325,5 @@
     width: 24px;
     height: 24px;
   }
+}
 }

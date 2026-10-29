@@ -1,6 +1,7 @@
 // app/page.tsx
 import type { Metadata } from 'next';
-import ClientPage from './ClientPage';
+import Hero from '@/components/Hero';
+import News from '@/components/News';
 
 const SITE_URL = 'https://www.amy-comic.com';
 const DESCRIPTION = '一次創作サイトです。高校生男女のラブコメ創作漫画「好きって言わせてやる！」を描いています。';
@@ -36,6 +37,9 @@ const jsonLd = {
   ],
 };
 
+// News を最新に保つため、1分ごとに再生成する
+export const revalidate = 60;
+
 export default function Page() {
   return (
     <>
@@ -43,7 +47,20 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
       />
-      <ClientPage />
+
+      <div className="bg-amy-yellow-light">
+        <h1 className="sr-only">エイミーコミック</h1>
+        <Hero />
+
+        <section className="px-4 pb-10 text-center font-zenmaru">
+          <p className="mx-auto max-w-md text-sm font-bold leading-7 text-zinc-700 md:max-w-xl">
+            一次創作メインのサイトです。<br />
+            高校生男女のラブコメ漫画「好きって言わせてやる！」を連載しています。
+          </p>
+        </section>
+
+        <News />
+      </div>
     </>
   );
 }

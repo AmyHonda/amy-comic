@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 
+@layer legacy {
+
 /* 二次創作ページ（番外編 subComic.css と同じレイアウト。クラス名は fan- で衝突回避） */
 
 .fan-gallery {
@@ -215,4 +217,5 @@
     width: 24px;
     height: 24px;
   }
+}
 }

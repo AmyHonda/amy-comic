@@ -1,10 +1,30 @@
 // app/layout.tsx
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import '../styles/global.css'
-import './globals.css'
+import { M_PLUS_Rounded_1c, Mochiy_Pop_One, Zen_Maru_Gothic } from "next/font/google";
+import './globals.css'; // レイヤーの順序宣言を含むので、最初に読み込む
+import '../styles/global.css';
 import { Analytics } from "@vercel/analytics/react";
-import Header from './Header';
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
+
+const mochiyPopOne = Mochiy_Pop_One({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-mochiy-pop-one",
+});
+
+const mPlusRounded = M_PLUS_Rounded_1c({
+  weight: "900",
+  subsets: ["latin"],
+  variable: "--font-mplus-rounded",
+});
+
+const zenMaruGothic = Zen_Maru_Gothic({
+  weight: ["500", "700"],
+  subsets: ["latin"],
+  variable: "--font-zen-maru-gothic",
+});
 
 const SITE_URL = 'https://www.amy-comic.com';
 const SITE_NAME = 'エイミーコミック';
@@ -41,19 +61,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="ja">
+    <html
+      lang="ja"
+      className={`${mochiyPopOne.variable} ${zenMaruGothic.variable} ${mPlusRounded.variable}`}
+    >
       <body>
-        <Header />
+        <SiteHeader />
 
         <main>
           {children}
         </main>
 
-        <footer>
-          <div className="footer-content">
-            <p>&copy;2025 エイミーコミック Amy Comic.</p>
-          </div>
-        </footer>
+        <SiteFooter />
 
         <Analytics />
 

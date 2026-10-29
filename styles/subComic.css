@@ -1,6 +1,8 @@
-@import url("https://unpkg.com/ress@5.0.2/dist/ress.min.css");
+@import url("https://unpkg.com/ress@5.0.2/dist/ress.min.css") layer(legacy);
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+@layer legacy {
 
 body.modal-open {
   overflow: hidden;
@@ -238,4 +240,5 @@ button {
     width: 24px;
     height: 24px;
   }
+}
 }

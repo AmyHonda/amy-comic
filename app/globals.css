@@ -1,5 +1,12 @@
 /* app/globals.css */
 
+/* レイヤーの順序: 古いCSS(legacy) < Tailwind の components < utilities
+   → Tailwind のクラスは、古いCSSより必ず優先される。
+   preflight(Tailwind のリセット)は、既存ページが崩れるので読み込まない。 */
+@layer theme, base, legacy, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -8,34 +15,39 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* エイミーコミックの黄色系カラー */
+  --color-amy-yellow-light: #FFF9D9; /* 背景 */
+  --color-amy-yellow: #FFD93D;       /* ボタン・フッター・メニュー */
+  --color-amy-yellow-deep: #E6B800;  /* ボタンの影・枠線 */
+  --color-amy-gold: #8A6500;         /* 見出し・日付の文字色 */
+  --color-amy-ink: #5A4500;          /* 黄色の上に載せる文字色 */
+
+  --font-mochiy: var(--font-mochiy-pop-one);
+  --font-mplus: var(--font-mplus-rounded); /* ロゴのカタカナに近い、太い丸ゴシック */
+  --font-zenmaru: var(--font-zen-maru-gothic);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* 既存ページ向けのスタイル（Tailwind より弱い扱い） */
+@layer legacy {
+  html, body {
+    min-height: 100%;
   }
-} */
 
-html, body {
-  min-height: 100%;
-}
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  min-height: 100vh;
-  display: flex; 
-  flex-direction: column;
-}
+  body > main {
+    flex: 1;
+  }
 
-body > main {
-  flex: 1;
-}
-
-footer {
-  margin-top: auto;
+  footer {
+    margin-top: auto;
+  }
 }

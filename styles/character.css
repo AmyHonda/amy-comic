@@ -1,6 +1,8 @@
-@import url("https://unpkg.com/ress@5.0.2/dist/ress.min.css");
+@import url("https://unpkg.com/ress@5.0.2/dist/ress.min.css") layer(legacy);
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+@layer legacy {
 
 body {
   text-align: center;
@@ -257,4 +259,5 @@ body.modal-open {
     font-size: 18px;
   }
 
+}
 }
