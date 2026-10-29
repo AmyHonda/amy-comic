@@ -54,7 +54,7 @@ export default async function News() {
               return (
                 <li
                   key={item.id}
-                  className="border-b border-amy-yellow/40 py-5 last:border-b-0"
+                  className="border-b border-amy-yellow/40 py-5 text-center last:border-b-0"
                 >
                   {item.linkUrl ? (
                     <a
