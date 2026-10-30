@@ -9,7 +9,7 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1793319611/03_wxojjc.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1793319616/04_lmdawf.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1793319615/05_w98xhe.jpg',
-            'https://res.cloudinary.com/dqx46otx4/image/upload/v1793319613/06_p9asv6.png',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1793322136/06-1_vz4lzz.png',
         ],
         isContinued: true,
     },
