@@ -5,7 +5,6 @@ export const sukebeList = [
         pages: [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1754224825/007-01_e42vlz.jpg',
         ],
-        URL: 'https://www.amy-comic.com/entry/2025/02/14/200000',
     },
     {
         title: '06スケベが描きたい③',

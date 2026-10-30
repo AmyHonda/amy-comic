@@ -37,7 +37,6 @@ export const subComics = [
         //     '/images/sub/021/001.jpg',
         //     '/images/sub/021/002.jpg',
         // ],
-        URL:'https://www.amy-comic.com/entry/2025/07/13/185041',
     },
     {
         title: '25.お姫様抱っこ',
