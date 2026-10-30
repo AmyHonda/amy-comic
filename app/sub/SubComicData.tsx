@@ -1,5 +1,19 @@
 export const subComics = [
     {
+        title: '28.デート【1】',
+        updatedAt: '2026-10-30',
+        thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1793319606/00_p9te2v.jpg',
+        pages: [
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1793319608/01_vnayfs.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1793319612/02_bxv3to.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1793319611/03_wxojjc.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1793319616/04_lmdawf.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1793319615/05_w98xhe.jpg',
+            'https://res.cloudinary.com/dqx46otx4/image/upload/v1793319613/06_p9asv6.png',
+        ],
+        isContinued: true,
+    },
+    {
         title: '27.#5 本編おまけ',
         updatedAt: '2026-10-16',
         thumbnail: 'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135803/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_n1goo9.jpg',
@@ -10,11 +24,6 @@ export const subComics = [
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135804/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC4_srwx3v.jpg',
             'https://res.cloudinary.com/dqx46otx4/image/upload/v1792135804/%E5%A5%BD%E3%81%8D5-%E3%81%8A%E3%81%BE%E3%81%91_%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC5_yjagbv.jpg',
         ],
-        // thumbnail: '/images/sub/021/000.jpg',
-        // pages: [
-        //     '/images/sub/021/001.jpg',
-        //     '/images/sub/021/002.jpg',
-        // ],
     },
     {
         title: '26.10秒ルール',
