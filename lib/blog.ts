@@ -22,17 +22,43 @@ export type Blog = {
   revisedAt?: string;
 };
 
-/** 一覧用(本文を含まないが、型は Blog をそのまま使う) */
-export async function getBlogs(): Promise<Blog[]> {
+export const BLOGS_PER_PAGE = 20;
+
+export const BLOG_DESCRIPTION =
+  "ラブコメ一次創作漫画「好きって言わせてやる！」の制作の裏話や、エイミーコミックの更新情報をお届けするブログです。";
+
+/** 一覧の1ページ分(新しい順)と、全記事数を取得する */
+export async function getBlogsPage(page: number): Promise<{ blogs: Blog[]; totalCount: number }> {
   try {
     const data = await client.getList<Blog>({
       endpoint: "blogs",
-      queries: { limit: 100, orders: "-publishedAt" },
+      queries: {
+        limit: BLOGS_PER_PAGE,
+        offset: (page - 1) * BLOGS_PER_PAGE,
+        orders: "-publishedAt",
+      },
     });
-    return data.contents ?? [];
+    return { blogs: data.contents ?? [], totalCount: data.totalCount ?? 0 };
   } catch {
     // microCMS が一時的に落ちていても、ビルドやページ表示を止めない
     console.error("blogs の取得に失敗しました");
+    return { blogs: [], totalCount: 0 };
+  }
+}
+
+export const totalPagesOf = (totalCount: number) => Math.ceil(totalCount / BLOGS_PER_PAGE);
+
+type BlogMeta = Pick<Blog, "id" | "publishedAt" | "updatedAt" | "revisedAt">;
+
+/** sitemap や静的生成用に、全記事の id と日付だけを(100件を超えても)全部取得する */
+export async function getAllBlogs(): Promise<BlogMeta[]> {
+  try {
+    return await client.getAllContents<BlogMeta>({
+      endpoint: "blogs",
+      queries: { fields: "id,publishedAt,updatedAt,revisedAt", orders: "-publishedAt" },
+    });
+  } catch {
+    console.error("blogs の全件取得に失敗しました");
     return [];
   }
 }

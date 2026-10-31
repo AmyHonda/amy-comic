@@ -9,8 +9,8 @@ import {
   SITE_NAME,
   SITE_URL,
   formatDate,
+  getAllBlogs,
   getBlog,
-  getBlogs,
   toDescription,
 } from "@/lib/blog";
 import "../../../styles/blog.css";
@@ -20,7 +20,7 @@ export const revalidate = 3600;
 
 // 既存の記事はビルド時に静的生成する。新しい記事は初回アクセス時に生成される。
 export async function generateStaticParams() {
-  const blogs = await getBlogs();
+  const blogs = await getAllBlogs();
   return blogs.map((blog) => ({ id: blog.id }));
 }
 
