@@ -28,7 +28,7 @@ export default function BlogPagination({ current, total }: { current: number; to
   if (total <= 1) return null;
 
   return (
-    <nav aria-label="ページ送り" className="mt-10 font-zenmaru">
+    <nav aria-label="ページ送り" className="mt-10 font-note">
       <ul className="m-0 flex list-none flex-wrap items-center justify-center gap-2 p-0">
         {current > 1 && (
           <li>

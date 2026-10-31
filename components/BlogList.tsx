@@ -16,7 +16,7 @@ export default function BlogList({
   totalPages: number;
 }) {
   return (
-    <div className="bg-amy-yellow-light px-4 pb-20 pt-24 font-zenmaru">
+    <div className="bg-amy-yellow-light px-4 pb-20 pt-24 font-note">
       <div className="mx-auto max-w-md md:max-w-xl lg:max-w-4xl">
         {/* 見出しは検索エンジン・読み上げ用に残し、画面にはプロフィールを出す */}
         <h1 className="sr-only">{page === 1 ? "ブログ" : `ブログ(${page}ページ目)`}</h1>
@@ -29,7 +29,7 @@ export default function BlogList({
             priority
             className="size-16 rounded-full bg-white object-cover shadow-md md:size-20"
           />
-          <p className="m-0 font-zenmaru text-2xl font-extrabold text-amy-ink md:text-3xl">
+          <p className="m-0 font-note text-2xl font-extrabold text-amy-ink md:text-3xl">
             emiko
           </p>
         </div>

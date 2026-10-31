@@ -136,7 +136,7 @@ export function LikeButton({
       disabled={status !== "ready"}
       aria-pressed={liked}
       aria-label={label}
-      className={`relative z-10 inline-flex cursor-pointer items-center gap-1 rounded-full p-1 text-xs transition hover:scale-105 disabled:cursor-default disabled:opacity-50 ${
+      className={`relative z-10 inline-flex cursor-pointer items-center gap-1 [font-family:inherit] rounded-full p-1 text-xs transition hover:scale-105 disabled:cursor-default disabled:opacity-50 ${
         liked ? RED : "text-gray-500"
       } ${className}`}
     >

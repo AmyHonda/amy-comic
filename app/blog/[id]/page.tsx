@@ -85,7 +85,7 @@ export default async function BlogDetailPage({ params }: Props) {
   };
 
   return (
-    <div className="bg-amy-yellow-light px-4 pb-20 pt-24 font-zenmaru">
+    <div className="bg-amy-yellow-light px-4 pb-20 pt-24 font-note">
       <script
         type="application/ld+json"
         // "<" をエスケープして、本文中の文字列で script が途切れないようにする

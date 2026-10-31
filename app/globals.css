@@ -26,6 +26,8 @@
   --font-mochiy: var(--font-mochiy-pop-one);
   --font-mplus: var(--font-mplus-rounded); /* ロゴのカタカナに近い、太い丸ゴシック */
   --font-zenmaru: var(--font-zen-maru-gothic);
+  /* ブログ用: note と同じ、端末標準のゴシック体(Webフォントは読み込まない) */
+  --font-note: "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial, "Noto Sans JP", Meiryo, sans-serif;
 }
 
 /* 既存ページ向けのスタイル（Tailwind より弱い扱い） */
