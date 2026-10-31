@@ -16,7 +16,7 @@ const menuItems: MenuItem[] = [
   { label: "イラスト", href: "/illust" },
   { label: "二次創作", href: "/nijisousaku" },
   { label: "AI作品", href: "/ai" },
-  { label: "ブログ", href: "https://note.com/emiko_xyz", external: true },
+  { label: "ブログ", href: "/blog" },
 ];
 
 const linkClass =

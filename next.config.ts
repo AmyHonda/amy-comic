@@ -1,6 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    // ブログのアイキャッチ(microCMS の画像)を next/image で配信するために許可する
+    remotePatterns: [
+      { protocol: 'https', hostname: 'images.microcms-assets.io' },
+    ],
+  },
   async redirects() {
     return [
       // Vercel の自動ドメイン (amy-comic.vercel.app) に来た人を、正規ドメインへ恒久転送する。
@@ -12,16 +18,10 @@ const nextConfig: NextConfig = {
         destination: 'https://www.amy-comic.com/:path*',
         permanent: true,
       },
-      // 旧ブログ(/blog/... と、はてな時代の /entry/...)は note に移したので、そちらへ転送する。
-      // 記事ごとの対応先は無いため、note のトップに集約する。
-      {
-        source: '/blog/:path*',
-        destination: 'https://note.com/emiko_xyz',
-        permanent: true,
-      },
+      // はてなブログ時代の旧URL(/entry/...)は、記事ごとの対応先が無いため /blog に集約する。
       {
         source: '/entry/:path*',
-        destination: 'https://note.com/emiko_xyz',
+        destination: '/blog',
         permanent: true,
       },
     ];
